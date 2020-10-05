@@ -1,0 +1,128 @@
+.section_holder {
+  width: 60%;
+  padding: 10px 0;
+  font-family: "Open Sans", sans-serif;
+}
+.flex-row {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.section_title {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.presentation_title {
+  font-size: 60px;
+  font-family: "Sansita Swashed", cursive;
+  margin: 0;
+}
+
+.mobile_presentation_image {
+  display: none;
+  width: 370px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.presentation_rol {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.presentation_holder {
+  width: 60%;
+}
+.presentation_image {
+  width: 370px;
+  border-radius: 50%;
+}
+.tecnologies_section {
+  color: white;
+}
+.tecnology_holder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tecnology_item {
+  width: 230px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 50px;
+}
+.tecnology_item img {
+  width: 60px;
+}
+.tecnology_item h4 {
+  padding-left: 10px;
+  font-size: 30px;
+}
+/* Colors */
+.orange {
+  color: rgb(241, 130, 25);
+}
+
+.grey {
+  color: rgb(94, 94, 94);
+}
+
+/*distance*/
+
+.align-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*background*/
+
+.background_cream {
+  background-color: rgb(255, 244, 220);
+}
+
+.background_orange {
+  background-color: rgb(241, 130, 25);
+}
+
+@media (max-width: 900px) {
+  .section_holder {
+    width: 80%;
+    text-align: center;
+  }
+  .section_title {
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+  }
+  .mobile_presentation_image {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    min-width: 200px;
+  }
+  .presentation_holder {
+    width: 100%;
+  }
+  .presentation_title {
+    width: 100%;
+    text-align: center;
+  }
+  .presentation_image {
+    display: none;
+  }
+  .tecnology_holder {
+    justify-content: space-around;
+  }
+  .tecnology_item {
+    margin-right: 0;
+    margin-bottom: 17px;
+  }
+  .tecnology_item img {
+    width: 50px;
+  }
+  .tecnology_item h4 {
+    margin: 10px;
+  }
+}
