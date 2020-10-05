@@ -1,5 +1,49 @@
 import React from "react";
 import parse from "html-react-parser";
+
+const BaTaxi = (props) => {
+  return (
+    <div className="job_item">
+      <div className="job_icon_holder">
+        <img
+          className="company_logo_small"
+          alt="Braindw"
+          src={require("../../assets/images/bataxi.png")}
+        />
+        <h3>{props.spanish ? "Soporte al usuario" : "User support"}</h3>
+        <h5>2017 - 2019</h5>
+      </div>
+      <div className="job_information">
+        <h4 className="underline">
+          {props.spanish ? "Tareas Realizadas" : "Job Activities"}
+        </h4>
+        <ul className="job_tasks">
+          <li className="job_task">
+            <p>
+              {props.spanish
+                ? "Reporte de incidencias en Trello"
+                : "Issues report in Trello"}
+            </p>
+          </li>
+          <li className="job_task">
+            <p>
+              {props.spanish
+                ? "Alta de nuevos usuarios y explicacion del uso"
+                : "New users creation and explanation of the App"}
+            </p>
+          </li>
+          <li className="job_task">
+            <p>
+              {props.spanish
+                ? "Soporte via teléfono y mail"
+                : "Phone and mail support"}
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
 const Braindw = (props) => {
   return (
     <div className="job_item">
@@ -78,6 +122,7 @@ const Experience = (props) => {
       <h1 className="section_title orange">
         {props.spanish ? "Experiencia Laboral" : "Work Experience"}
       </h1>
+      <BaTaxi spanish={props.spanish}></BaTaxi>
       <Braindw spanish={props.spanish}></Braindw>
     </div>
   );

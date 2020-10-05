@@ -1,11 +1,12 @@
-import { render } from "@testing-library/react";
 import React from "react";
 
 const ProfesorOak = (props) => {
   return (
     <div className="project_holder">
       <div className="project_info">
-        <h2 className="white">Profesor Oak</h2>
+        <h2 className="white">
+          {props.spanish ? "Profesor Oak" : "Professor Oak"}
+        </h2>
         <img
           className="profesor_oak_icon"
           alt="Profesor Oak Icon"
@@ -15,10 +16,12 @@ const ProfesorOak = (props) => {
       <div className="project_details">
         <p className="white">
           {props.spanish
-            ? "Profesor Oak es un bot de discord, el cual fue construido utilizando PokeApi, Discord.js, PostreSQL y fue hosteado en Heroku"
-            : "Profesor Oak is a discord bot, it was built using PokeApi, Discord.js, PostgreSQL and hosted in Heroku"}
+            ? "Profesor Oak es un bot de discord, el cual fue construido utilizando PokeApi, Discord.js, PostreSQL y esta hosteado en Heroku"
+            : "Profesor Oak is a discord bot, it was built using PokeApi, Discord.js, PostgreSQL and it's hosted on Heroku"}
         </p>
-        <button>{props.spanish ? "Saber más" : "View more"}</button>
+        <button className="button_white">
+          {props.spanish ? "Saber más" : "Know more"}
+        </button>
       </div>
     </div>
   );
