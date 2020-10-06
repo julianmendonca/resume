@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b698b07c.chunk.css",
+    "main.js": "/static/js/main.09405358.chunk.js",
+    "main.js.map": "/static/js/main.09405358.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3bbf3189.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3bbf3189.js.map",
+    "static/js/2.b4cbeaeb.chunk.js": "/static/js/2.b4cbeaeb.chunk.js",
+    "static/js/2.b4cbeaeb.chunk.js.map": "/static/js/2.b4cbeaeb.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.09177a1bb451bbf8cc9496b0f1c832c5.js": "/precache-manifest.09177a1bb451bbf8cc9496b0f1c832c5.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.b698b07c.chunk.css.map": "/static/css/main.b698b07c.chunk.css.map",
+    "static/js/2.b4cbeaeb.chunk.js.LICENSE.txt": "/static/js/2.b4cbeaeb.chunk.js.LICENSE.txt",
+    "static/media/bataxi.png": "/static/media/bataxi.0aa385fb.png",
+    "static/media/braindw.png": "/static/media/braindw.84f0a9c7.png",
+    "static/media/css.png": "/static/media/css.b848d5d9.png",
+    "static/media/elastic.svg": "/static/media/elastic.d0109b29.svg",
+    "static/media/html.png": "/static/media/html.25b694ba.png",
+    "static/media/node.png": "/static/media/node.fd723f28.png",
+    "static/media/presentation_image.jpg": "/static/media/presentation_image.ade0d8b5.jpg",
+    "static/media/profesor_oak.jpeg": "/static/media/profesor_oak.abd93730.jpeg",
+    "static/media/react.png": "/static/media/react.82a318cc.png",
+    "static/media/sql.png": "/static/media/sql.6be648b9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3bbf3189.js",
+    "static/js/2.b4cbeaeb.chunk.js",
+    "static/css/main.b698b07c.chunk.css",
+    "static/js/main.09405358.chunk.js"
+  ]
+}

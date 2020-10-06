@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import Holder from "../../hoc/Holder/Holder";
 import Presentation from "../Presentation/Presentation";
 import Technologies from "../Technologies/Technologies";
 import Experience from "../Experience/Experience";
 import Projects from "../Projects/Projects";
+import ProfessorOak from "../ProfesorOak/ProfesorOak";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 const Layout = (props) => {
   const [spanish, setSpanish] = useState(true);
   return (
-    <Holder>
+    <Router>
       <div className="language_selector">
         <span
           className={
@@ -35,19 +36,24 @@ const Layout = (props) => {
           English
         </span>
       </div>
-      <section className="align-center">
-        <Presentation spanish={spanish} />
-      </section>
-      <section className="align-center background_orange">
-        <Technologies spanish={spanish}></Technologies>
-      </section>
-      <section className="align-center">
-        <Experience spanish={spanish}></Experience>
-      </section>
-      <section className="align-center background_orange">
-        <Projects spanish={spanish}></Projects>
-      </section>
-    </Holder>
+      <Route path="/home">
+        <section className="align-center presentation_section">
+          <Presentation spanish={spanish} />
+        </section>
+        <section className="align-center background_orange">
+          <Technologies spanish={spanish}></Technologies>
+        </section>
+        <section className="align-center">
+          <Experience spanish={spanish}></Experience>
+        </section>
+        <section className="align-center background_orange">
+          <Projects spanish={spanish}></Projects>
+        </section>
+      </Route>
+      <Route path="/professor_oak">
+        <ProfessorOak spanish={spanish} />
+      </Route>
+    </Router>
   );
 };
 

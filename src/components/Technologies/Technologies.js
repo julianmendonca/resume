@@ -24,6 +24,13 @@ const Experience = (props) => {
           <h4>C# .Net</h4>
         </div>
         <div className="tecnology_item">
+          <img
+            alt="ElasticSearch Icon"
+            src={require("../../assets/icons/elastic.svg")}
+          />
+          <h4>Elasticsearch</h4>
+        </div>
+        <div className="tecnology_item">
           <img alt="HTML Icon" src={require("../../assets/icons/html.png")} />
           <h4>HTML 5</h4>
         </div>
@@ -34,13 +41,6 @@ const Experience = (props) => {
         <div className="tecnology_item">
           <img alt="Git Icon" src={require("../../assets/icons/git.png")} />
           <h4>Git</h4>
-        </div>
-        <div className="tecnology_item">
-          <img
-            alt="ElasticSearch Icon"
-            src={require("../../assets/icons/elastic.svg")}
-          />
-          <h4>ELASTICSEARCH</h4>
         </div>
       </div>
     </div>

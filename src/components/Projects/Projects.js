@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ProfesorOak = (props) => {
   return (
@@ -19,9 +20,11 @@ const ProfesorOak = (props) => {
             ? "Profesor Oak es un bot de discord, el cual fue construido utilizando PokeApi, Discord.js, PostreSQL y esta hosteado en Heroku"
             : "Profesor Oak is a discord bot, it was built using PokeApi, Discord.js, PostgreSQL and it's hosted on Heroku"}
         </p>
-        <button className="button_white">
-          {props.spanish ? "Saber más" : "Know more"}
-        </button>
+        <Link to="/professor_oak">
+          <button className="button_white">
+            {props.spanish ? "Saber más" : "Know more"}
+          </button>
+        </Link>
       </div>
     </div>
   );
