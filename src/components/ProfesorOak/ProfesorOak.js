@@ -54,8 +54,8 @@ const ProfesorOak = (props) => {
               </div>{" "}
               <p>
                 {props.spanish
-                  ? "Puede que aparezca un pokemon, puede tomar varios intentos"
-                  : "A pokemon may appear, it can take a few attempts "}
+                  ? "Puede que aparezca un pokemon, puede tomar varios intentos."
+                  : "A pokemon may appear, it can take a few attempts."}
               </p>
             </li>
             <li className="white">
@@ -64,8 +64,8 @@ const ProfesorOak = (props) => {
               </div>{" "}
               <p>
                 {props.spanish
-                  ? "Cuando aparece un pokemon salvaje debes escribir !enviar + nombre_de_tu_pokemon para enviar un pokemon e intentar capturar al pokemon salvaje"
-                  : "When a wild pokemon appear you must write !enviar + your_pokemon_name to send a pokemon and catch the wild pokemon"}
+                  ? "Cuando aparece un pokemon salvaje debes escribir !enviar + nombre_de_tu_pokemon para enviar un pokemon e intentar capturar al pokemon salvaje."
+                  : "When a wild pokemon appear you must write !enviar + your_pokemon_name to send a pokemon and catch the wild pokemon."}
               </p>
             </li>
             <li className="white">
@@ -74,8 +74,8 @@ const ProfesorOak = (props) => {
               </div>{" "}
               <p>
                 {props.spanish
-                  ? "Te dice si tenes algun pokemon pendiente por capturar"
-                  : "Tells you if there is a pending pokemon to capture"}
+                  ? "Te dice si tenes algun pokemon pendiente por capturar."
+                  : "Tells you if there is a pending pokemon to capture."}
               </p>
             </li>
             <li className="white">
@@ -84,8 +84,8 @@ const ProfesorOak = (props) => {
               </div>{" "}
               <p>
                 {props.spanish
-                  ? "Muestra una imagen con los stats de un pokemon que poseas"
-                  : "Shows an image with the stats of a pokemon you own"}
+                  ? "Muestra una imagen con los stats de un pokemon que poseas."
+                  : "Shows an image with the stats of a pokemon you own."}
               </p>
             </li>
             <li className="white">
@@ -94,16 +94,16 @@ const ProfesorOak = (props) => {
               </div>{" "}
               <p>
                 {props.spanish
-                  ? "Muestra todos los comandos disponibles"
-                  : "Show all available commands"}
+                  ? "Muestra todos los comandos disponibles. ( Algunos no funcionan en este widget)."
+                  : "Show all available commands. ( Some of them doesen't work on this widget)."}
               </p>
             </li>
           </ul>
           <div className="discord_chat">
             <h5 className="white">
               {props.spanish
-                ? "En este chat estan limitados los comandos y funciona un poco lento debido a las limitaciones del widget de discord"
-                : "This chat is a little slow and has limited commands because of the limitations the discord widget has"}
+                ? "En este chat estan limitados los comandos y funciona un poco lento debido a las limitaciones del widget de discord."
+                : "This chat is a little slow and has limited commands because of the limitations the discord widget has."}
             </h5>
             <iframe
               title="Discord Bot"

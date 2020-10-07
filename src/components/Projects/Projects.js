@@ -34,7 +34,9 @@ const BrainProject = (props) => {
   return (
     <div className="project_holder_brain">
       <div className="project_info">
-        <h2 className="white">Brain.js</h2>
+        <h2 className="white">
+          {props.spanish ? "Algoritmos y " : "Algorithms & "}Brain.js
+        </h2>
         <img
           className="brain_icon"
           alt="Profesor Oak Icon"
@@ -44,8 +46,8 @@ const BrainProject = (props) => {
       <div className="project_details_brain">
         <p className="white">
           {props.spanish
-            ? "Brain.js es una libreria de Neural Networks para javascript que utiliza GPU para poder utilizarse en el navegador web, arme pequeños proyectos para ver sus utilidades"
-            : "Brain.js is a Neural Network library for javascript wich uses GPU to be able to be usable in web browsers, I built a few small projects to show its uitilities"}
+            ? "Me interesan mucho los Algoritmos y Machine Learning/Deep Learning, asi que arme unos pequeños proyectos para ver sus utilidades en Javascript, utilizando simples algoritmos y Brain.js"
+            : "I am very interested in Algorithms and Machine Learning/Deep Learning, so i made a few little projects to see its utilities in Javascript using simple algorithms and brain.js"}
         </p>
         <Link to="/brain">
           <button className="button_white">

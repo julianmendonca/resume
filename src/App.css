@@ -228,15 +228,29 @@ p {
   height: 600px;
 }
 .controlls_holder {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+.color_display_holder {
+  background-color: white;
+  border: 1px solid black;
+  width: 100%;
+  height: 200px;
+  max-width: 500px;
+  margin: 0 auto;
+}
 .color_display {
   width: 100%;
-  max-width: 500px;
-  background-color: white;
-  height: 500px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.train_button {
+  margin-top: 20px;
 }
 .text_color_holder {
   width: 100%;
@@ -245,13 +259,60 @@ p {
 .text_color_holder h2 {
   text-align: center;
 }
+.spell_holder {
+  text-align: center;
+}
 .spell_input {
   padding: 10px 10px;
   width: 90%;
-  max-width: 500px;
+  max-width: 400px;
 }
 .suggested_words {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 400px;
   background-color: white;
+  list-style: none;
+  padding: 0 10px;
+  text-align: start;
+}
+.distance_calculator {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.distance_calculator div {
+  width: 45%;
+}
+.distance_calculator div input {
+  margin: 10px 0;
+  padding: 10px 5px;
+}
+.distance_calculator h4 {
+  margin: 10px 5px;
+  line-height: 20px;
+}
+.color_block {
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: red;
+  margin-bottom: 10px;
+}
+/* Text Align*/
+.align_center {
+  text-align: center;
+}
+.align_start {
+  text-align: start;
 }
 /* Text Decorations */
 .underline {
@@ -415,8 +476,5 @@ p {
   .controlls_holder {
     flex-direction: column;
     align-items: center;
-  }
-  .color_display {
-    height: 300px;
   }
 }
