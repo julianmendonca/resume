@@ -1,29 +1,35 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+
 const ProfesorOak = (props) => {
   useEffect(() => {
     try {
       window.scroll(0, 0);
-      if (window.document.querySelector("iframe") === null)
-        window.location.reload();
+      if (window.document.querySelector("iframe") === null) {
+        window.document.querySelector("iframe").remove();
+        window.document.querySelector(
+          "discord_chat"
+        ).innerHTML += `<iframe title="Discord Bot" src="https://widgetbot.io/channels/762859545189154816/762859808574668810/?api=e109816d-54b1-4a6f-b16b-c4e1504f5cf8" style="border: none; width: 100%; height: 100%;"></iframe>`;
+      }
+      //window.location.reload();
     } catch (e) {
       console.error(e);
     }
   }, []);
   return (
-    <div>
+    <div className="background_orange">
       <div className="professor_oak_container background_orange">
         <Link to="/home">
-          <button className="home_button">
+          <button className="home_button button_white">
             {props.spanish ? "Inicio" : "Home"}
           </button>
         </Link>
         <div className="oak_presentation">
           <h1 className="section_title white">
-            {props.spanish ? "Profesor Oak" : "Proffesor Oak"}
+            {props.spanish ? "Profesor Oak" : "Professor Oak"}
           </h1>
           <img
-            className="profesor_oak_icon"
+            className="brain_icon"
             alt="Profesor Oak Icon"
             src={require("../../assets/images/profesor_oak.jpeg")}
           />
@@ -32,13 +38,54 @@ const ProfesorOak = (props) => {
               ? "Profesor Oak es un bot de Pokemon para Discord, uno puede capturar pokemones, pelear y apostar pokemones con otros usuarios."
               : "Proffesor Oak is a Pokemon bot for Discord, you can either catch, fight or bet pokemons with other users."}
           </p>
+          <h2 className="white">
+            {props.spanish ? "Comandos disponibles" : "Available  commands"}:
+          </h2>
+          <ul>
+            <li className="white">
+              <div>
+                <strong>!buscar</strong>
+              </div>{" "}
+              {props.spanish
+                ? "Puede que aparezca un pokemon, puede tomar varios intentos"
+                : "A pokemon may appear, it can take a few attempts "}
+            </li>
+            <li className="white">
+              <div>
+                <strong>!enviar pokemon</strong>
+              </div>{" "}
+              {props.spanish
+                ? "Cuando aparece un pokemon salvaje debes escribir !enviar + nombre_de_tu_pokemon para enviar un pokemon e intentar capturar al pokemon salvaje"
+                : "When a wild pokemon appear you must write !enviar + your_pokemon_name to send a pokemon and catch the wild pokemon"}
+            </li>
+            <li className="white">
+              <div>
+                <strong>!pendiente</strong>
+              </div>{" "}
+              {props.spanish
+                ? "Te dice si tenes algun pokemon pendiente por capturar"
+                : "Tells you if there is a pending pokemon to capture"}
+            </li>
+            <li className="white">
+              <div>
+                <strong>!Pokedex pokemon</strong>
+              </div>{" "}
+              {props.spanish
+                ? "Muestra una imagen con los stats de un pokemon que poseas"
+                : "Shows an image with the stats of a pokemon you own"}
+            </li>
+          </ul>
           <div className="discord_chat">
-            <widgetbot
-              className="discord_chat"
-              server="762859545189154816"
-              channel="762859808574668810"
-              width="100%"
-            ></widgetbot>
+            <h5 className="white">
+              {props.spanish
+                ? "En este chat estan limitados los comandos y funciona un poco lento debido a las limitaciones del widget de discord"
+                : "This chat is a little slow and has limited commands because of the limitations the discord widget has"}
+            </h5>
+            <iframe
+              title="Discord Bot"
+              src="https://widgetbot.io/channels/762859545189154816/762859808574668810/?api=e109816d-54b1-4a6f-b16b-c4e1504f5cf8"
+              style={{ border: "none", width: "100%", height: "100%" }}
+            ></iframe>
           </div>
         </div>
       </div>

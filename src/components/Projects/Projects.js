@@ -30,6 +30,33 @@ const ProfesorOak = (props) => {
   );
 };
 
+const BrainProject = (props) => {
+  return (
+    <div className="project_holder_brain">
+      <div className="project_info">
+        <h2 className="white">Brain.js</h2>
+        <img
+          className="brain_icon"
+          alt="Profesor Oak Icon"
+          src={require("../../assets/images/brain.png")}
+        />
+      </div>
+      <div className="project_details_brain">
+        <p className="white">
+          {props.spanish
+            ? "Brain.js es una libreria de Neural Networks para javascript que utiliza GPU para poder utilizarse en el navegador web, arme pequeños proyectos para ver sus utilidades"
+            : "Brain.js is a Neural Network library for javascript wich uses GPU to be able to be usable in web browsers, I built a few small projects to show its uitilities"}
+        </p>
+        <Link to="/brain">
+          <button className="button_white">
+            {props.spanish ? "Saber más" : "Know more"}
+          </button>
+        </Link>
+      </div>
+    </div>
+  );
+};
+
 const Projects = (props) => {
   return (
     <div className="section_holder">
@@ -37,6 +64,7 @@ const Projects = (props) => {
         {props.spanish ? "Proyectos Personales" : "Personal Projects"}
       </h1>
       <ProfesorOak spanish={props.spanish}></ProfesorOak>
+      <BrainProject spanish={props.spanish}></BrainProject>
     </div>
   );
 };

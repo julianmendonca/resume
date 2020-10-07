@@ -122,7 +122,10 @@
   font-size: 25px;
 }
 .job_tasks {
-  font-size: 20px;
+  font-size: 17px;
+}
+.job_tasks p {
+  width: 95%;
 }
 .company_logo {
   width: 200px;
@@ -148,12 +151,28 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding-bottom: 30px;
+}
+.project_holder_brain {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
 }
 .project_info {
   text-align: center;
 }
+.project_details_brain {
+  text-align: end;
+  max-width: 500px;
+}
 .project_details {
   max-width: 500px;
+}
+.brain_icon {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 .profesor_oak_icon {
   width: 200px;
@@ -166,20 +185,66 @@
   flex-direction: column;
   align-items: center;
 }
+.brain_project_container {
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1137px;
+}
 .oak_presentation {
   width: 90%;
   max-width: 1137px;
-  font-size: 25px;
+  padding-bottom: 100px;
 }
+.oak_presentation p {
+  text-align: start;
+  font-size: 20px;
+}
+
+.oak_presentation h2 {
+  text-align: start;
+}
+
+.oak_presentation li {
+  list-style-type: none;
+  text-align: start;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.oak_presentation strong {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
 .home_button {
   padding: 20px 30px;
-  position: absolute;
-  left: 0;
-  top: 0;
+  margin: 20px;
 }
 .discord_chat {
   width: 100%;
   height: 600px;
+}
+.controlls_holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.color_display {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  height: 500px;
+}
+.text_color_holder {
+  width: 100%;
+  text-align: center;
+}
+.text_color_holder h2 {
+  text-align: center;
 }
 /* Text Decorations */
 .underline {
@@ -197,7 +262,6 @@
 .grey {
   color: rgb(94, 94, 94);
 }
-
 /*distance*/
 
 .align-center {
@@ -327,8 +391,25 @@
     max-width: 1137px;
     font-size: 16px;
   }
+
+  .oak_presentation p {
+    font-size: 16px;
+  }
   .discord_chat {
     width: 100%;
     height: 400px;
+  }
+  .project_holder_brain {
+    flex-direction: column;
+  }
+  .project_details_brain {
+    text-align: center;
+  }
+  .controlls_holder {
+    flex-direction: column;
+    align-items: center;
+  }
+  .color_display {
+    height: 300px;
   }
 }
