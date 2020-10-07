@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import TextColor from "./TextColor";
+import SpellChecker from "../SpellChecker/SpellChecker";
 const BrainProject = (props) => {
   return (
     <div className="background_orange" style={{ paddingBottom: "30px" }}>
@@ -10,6 +11,7 @@ const BrainProject = (props) => {
             {props.spanish ? "Inicio" : "Home"}
           </button>
         </Link>
+        <SpellChecker spanish={props.spanish}></SpellChecker>
         <TextColor spanish={props.spanish}></TextColor>
       </div>
     </div>

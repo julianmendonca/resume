@@ -33,11 +33,17 @@ const ProfesorOak = (props) => {
             alt="Profesor Oak Icon"
             src={require("../../assets/images/profesor_oak.jpeg")}
           />
-          <p className="white">
+          <h2
+            className="white"
+            style={{
+              textAlign: "center",
+              textShadow: "6px 5px 8px rgb(120,0,84)",
+            }}
+          >
             {props.spanish
               ? "Profesor Oak es un bot de Pokemon para Discord, uno puede capturar pokemones, pelear y apostar pokemones con otros usuarios."
               : "Proffesor Oak is a Pokemon bot for Discord, you can either catch, fight or bet pokemons with other users."}
-          </p>
+          </h2>
           <h2 className="white">
             {props.spanish ? "Comandos disponibles" : "Available  commands"}:
           </h2>
@@ -46,33 +52,51 @@ const ProfesorOak = (props) => {
               <div>
                 <strong>!buscar</strong>
               </div>{" "}
-              {props.spanish
-                ? "Puede que aparezca un pokemon, puede tomar varios intentos"
-                : "A pokemon may appear, it can take a few attempts "}
+              <p>
+                {props.spanish
+                  ? "Puede que aparezca un pokemon, puede tomar varios intentos"
+                  : "A pokemon may appear, it can take a few attempts "}
+              </p>
             </li>
             <li className="white">
               <div>
                 <strong>!enviar pokemon</strong>
               </div>{" "}
-              {props.spanish
-                ? "Cuando aparece un pokemon salvaje debes escribir !enviar + nombre_de_tu_pokemon para enviar un pokemon e intentar capturar al pokemon salvaje"
-                : "When a wild pokemon appear you must write !enviar + your_pokemon_name to send a pokemon and catch the wild pokemon"}
+              <p>
+                {props.spanish
+                  ? "Cuando aparece un pokemon salvaje debes escribir !enviar + nombre_de_tu_pokemon para enviar un pokemon e intentar capturar al pokemon salvaje"
+                  : "When a wild pokemon appear you must write !enviar + your_pokemon_name to send a pokemon and catch the wild pokemon"}
+              </p>
             </li>
             <li className="white">
               <div>
                 <strong>!pendiente</strong>
               </div>{" "}
-              {props.spanish
-                ? "Te dice si tenes algun pokemon pendiente por capturar"
-                : "Tells you if there is a pending pokemon to capture"}
+              <p>
+                {props.spanish
+                  ? "Te dice si tenes algun pokemon pendiente por capturar"
+                  : "Tells you if there is a pending pokemon to capture"}
+              </p>
             </li>
             <li className="white">
               <div>
-                <strong>!Pokedex pokemon</strong>
+                <strong>!pokedex pokemon</strong>
               </div>{" "}
-              {props.spanish
-                ? "Muestra una imagen con los stats de un pokemon que poseas"
-                : "Shows an image with the stats of a pokemon you own"}
+              <p>
+                {props.spanish
+                  ? "Muestra una imagen con los stats de un pokemon que poseas"
+                  : "Shows an image with the stats of a pokemon you own"}
+              </p>
+            </li>
+            <li className="white">
+              <div>
+                <strong>!comandos</strong>
+              </div>{" "}
+              <p>
+                {props.spanish
+                  ? "Muestra todos los comandos disponibles"
+                  : "Show all available commands"}
+              </p>
             </li>
           </ul>
           <div className="discord_chat">
