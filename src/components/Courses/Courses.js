@@ -4,13 +4,15 @@ import Certificate from "../Certificate/Certificate";
 const CourseItem = (props) => {
   return (
     <li className="course_item">
-      <h4>{props.spanish ? props.titleSpanish : props.titleEnglish}</h4>
-      <h5>
-        {props.spanish ? "Fecha" : "Date"}:{props.date}
-      </h5>
-      <h5>
-        {props.spanish ? "Duración" : "Duration"}:{props.duration}
-      </h5>
+      <div>
+        <h4>{props.spanish ? props.titleSpanish : props.titleEnglish}</h4>
+        <h5>
+          {props.spanish ? "Fecha" : "Date"}:{props.date}
+        </h5>
+        <h5>
+          {props.spanish ? "Duración" : "Duration"}:{props.duration}
+        </h5>
+      </div>
       <button
         className="button_white button_small"
         onClick={(e) => {
@@ -51,29 +53,40 @@ const Courses = (props) => {
             />
           </div>
           <CourseItem
-            image={require("../../assets/icons/educacionit.jpg")}
+            image={require("../../assets/images/courses/it/java.png")}
             setCertificate={setCertificate}
             spanish={props.spanish}
-            titleSpanish="Introducción a Java"
-            titleEnglish="Introduction to Java"
-            date="2018"
-            duration="10hs"
+            titleSpanish="Java Standard Programming 8.0"
+            titleEnglish="Java Standard Programming 8.0"
+            date="2017"
+            duration="40hs"
           />
           <CourseItem
+            image={require("../../assets/images/courses/it/objetos.png")}
             setCertificate={setCertificate}
             spanish={props.spanish}
-            titleSpanish="Introducción a SQL"
-            titleEnglish="Introduction to SQL"
-            date="2017"
-            duration="10hs"
+            titleSpanish="Introducción al Paradigma de Objetos"
+            titleEnglish="Introduction to Object Paradigma  "
+            date="2019"
+            duration="9hs"
           />
           <CourseItem
+            image={require("../../assets/images/courses/it/sql.png")}
             setCertificate={setCertificate}
             spanish={props.spanish}
-            titleSpanish="Android Studio"
-            titleEnglish="Android Studio"
+            titleSpanish="Introducción a Base de Datos y SQL"
+            titleEnglish="Introduction to Data Bases and SQL"
             date="2017"
-            duration="10hs"
+            duration="12hs"
+          />
+          <CourseItem
+            image={require("../../assets/images/courses/it/android.png")}
+            setCertificate={setCertificate}
+            spanish={props.spanish}
+            titleSpanish="Programación en Android"
+            titleEnglish="Android programing"
+            date="2017"
+            duration="15hs"
           />
         </ul>
         <ul className="courses_list">
