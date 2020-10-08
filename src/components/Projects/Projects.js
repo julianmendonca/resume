@@ -1,5 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import parse from "html-react-parser";
+const ReactProject = (props) => {
+  return (
+    <div className="project_holder">
+      <div className="project_info">
+        <h2 className="white">
+          {props.spanish ? "Projectos en React" : "React Projects"}
+        </h2>
+        <img
+          className="profesor_oak_icon"
+          alt="Profesor Oak Icon"
+          src={require("../../assets/icons/react.png")}
+        />
+      </div>
+      <div className="project_details">
+        <p className="white">
+          {props.spanish
+            ? parse(
+                "He realizado aplicaciones web con contenido personalizado usando <b>React.js</b> para Easy Argentina, Musimundo y Locatel Colombia. Tambien esta misma pagina fue hecha en <b>React.js</b> usando <b>React Hooks</b>"
+              )
+            : parse(
+                "I have built web apps in <b>React.js</b> with personalized content for Easy Argentina, Musimundo and Locatel Colombia. This website is also made with <b>React.js</b> and <b>React Hooks</b>"
+              )}
+        </p>
+      </div>
+    </div>
+  );
+};
 
 // Icons
 import professorOakIcon from "../../assets/images/profesor_oak.jpeg";
@@ -67,6 +95,7 @@ const Projects = (props) => {
       </h1>
       <ProfesorOak spanish={props.spanish}></ProfesorOak>
       <BrainProject spanish={props.spanish}></BrainProject>
+      <ReactProject spanish={props.spanish}></ReactProject>
     </div>
   );
 };

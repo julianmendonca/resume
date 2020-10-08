@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import Tilt from "react-tilt";
 import Presentation from "../Presentation/Presentation";
 import Technologies from "../Technologies/Technologies";
 import Experience from "../Experience/Experience";
 import Projects from "../Projects/Projects";
 import ProfessorOak from "../ProfesorOak/ProfesorOak";
 import BrainProject from "../BrainProject/BrainProject";
+import Courses from "../Courses/Courses";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 const Layout = (props) => {
@@ -45,10 +47,18 @@ const Layout = (props) => {
       </div>
       <Route path="/" exact>
         <section className="align-center presentation_section">
-          <Presentation spanish={spanish} />
+          <Tilt
+            options={{ max: 25, scale: 1 }}
+            style={{ display: "flex", justifyContent: "center" }}
+          >
+            <Presentation spanish={spanish} />
+          </Tilt>
         </section>
         <section className="align-center background_orange">
           <Technologies spanish={spanish}></Technologies>
+        </section>
+        <section className="align-center background_orange">
+          <Courses spanish={spanish}></Courses>
         </section>
         <section className="align-center">
           <Experience spanish={spanish}></Experience>
