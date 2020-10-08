@@ -4,7 +4,7 @@ const Experience = (props) => {
   return (
     <div className="section_holder tecnologies_section">
       <h1 className="section_title">
-        {props.spanish ? "Tecnologias" : "Tecnologies"}
+        {props.spanish ? "Tecnologías" : "Tecnologies"}
       </h1>
       <div className="tecnology_holder">
         <div className="tecnology_item">

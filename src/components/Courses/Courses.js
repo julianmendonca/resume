@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import Certificate from "../Certificate/Certificate";
 
 const CourseItem = (props) => {
   return (
@@ -10,7 +11,12 @@ const CourseItem = (props) => {
       <h5>
         {props.spanish ? "Duración" : "Duration"}:{props.duration}
       </h5>
-      <button className="button_white button_small">
+      <button
+        className="button_white button_small"
+        onClick={(e) => {
+          props.setCertificate(props.image);
+        }}
+      >
         {props.spanish ? "Ver certificado" : "View certificate"}
       </button>
     </li>
@@ -18,20 +24,35 @@ const CourseItem = (props) => {
 };
 
 const Courses = (props) => {
+  const [certificate, setCertificate] = useState("");
+  const closeCertificateImage = () => {
+    setCertificate("");
+  };
   return (
     <div className="cursos_container section_holder white">
+      {certificate !== "" ? (
+        <Certificate
+          closeCertificateImage={closeCertificateImage}
+          image={certificate}
+        />
+      ) : (
+        ""
+      )}
       <h1 className="section_title">
         {props.spanish ? "Cursos realizados" : "Courses taken"}
       </h1>
       <div className="courses_holder">
         <ul className="courses_list">
-          <img
-            alt="Educacion IT"
-            src={require("../../assets/icons/educacionit.jpg")}
-            className="course_image"
-          />
-
+          <div className="course_image_holder">
+            <img
+              alt="Educacion IT"
+              src={require("../../assets/icons/educacionit.jpg")}
+              className="course_image"
+            />
+          </div>
           <CourseItem
+            image={require("../../assets/icons/educacionit.jpg")}
+            setCertificate={setCertificate}
             spanish={props.spanish}
             titleSpanish="Introducción a Java"
             titleEnglish="Introduction to Java"
@@ -39,6 +60,7 @@ const Courses = (props) => {
             duration="10hs"
           />
           <CourseItem
+            setCertificate={setCertificate}
             spanish={props.spanish}
             titleSpanish="Introducción a SQL"
             titleEnglish="Introduction to SQL"
@@ -46,6 +68,7 @@ const Courses = (props) => {
             duration="10hs"
           />
           <CourseItem
+            setCertificate={setCertificate}
             spanish={props.spanish}
             titleSpanish="Android Studio"
             titleEnglish="Android Studio"
@@ -54,12 +77,15 @@ const Courses = (props) => {
           />
         </ul>
         <ul className="courses_list">
-          <img
-            alt="Udemy"
-            src={require("../../assets/icons/udemy.png")}
-            className="course_image"
-          />
+          <div className="course_image_holder">
+            <img
+              alt="Udemy"
+              src={require("../../assets/icons/udemy.svg")}
+              className="course_image"
+            />
+          </div>
           <CourseItem
+            setCertificate={setCertificate}
             spanish={props.spanish}
             titleSpanish="Desarrollo de juegos con Unity 3D C#"
             titleEnglish="Game development with Unity 3D C#"
@@ -67,6 +93,7 @@ const Courses = (props) => {
             duration="10hs"
           />
           <CourseItem
+            setCertificate={setCertificate}
             spanish={props.spanish}
             titleSpanish="React - La guia completa (Hooks, React Router)"
             titleEnglish="React - The complete guide (Hooks, React Router)"
@@ -74,6 +101,7 @@ const Courses = (props) => {
             duration="10hs"
           />
           <CourseItem
+            setCertificate={setCertificate}
             spanish={props.spanish}
             titleSpanish="Android Studio"
             titleEnglish="Android Studio"
