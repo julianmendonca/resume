@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Tilt from "react-tilt";
 import Presentation from "../Presentation/Presentation";
 import Technologies from "../Technologies/Technologies";
 import Experience from "../Experience/Experience";
@@ -39,7 +40,12 @@ const Layout = (props) => {
       </div>
       <Route path="/" exact>
         <section className="align-center presentation_section">
-          <Presentation spanish={spanish} />
+          <Tilt
+            options={{ max: 25, scale: 1 }}
+            style={{ display: "flex", justifyContent: "center" }}
+          >
+            <Presentation spanish={spanish} />
+          </Tilt>
         </section>
         <section className="align-center background_orange">
           <Technologies spanish={spanish}></Technologies>
