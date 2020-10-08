@@ -19,7 +19,7 @@ const ProfesorOak = (props) => {
   return (
     <div className="background_orange">
       <div className="professor_oak_container background_orange">
-        <Link to="/home">
+        <Link to="/">
           <button className="home_button button_white">
             {props.spanish ? "Inicio" : "Home"}
           </button>

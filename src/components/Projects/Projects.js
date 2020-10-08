@@ -22,7 +22,7 @@ const ProfesorOak = (props) => {
         </p>
         <Link to="/professor_oak">
           <button className="button_white">
-            {props.spanish ? "Saber más" : "Know more"}
+            {props.spanish ? "Saber más" : "Learn more"}
           </button>
         </Link>
       </div>
@@ -51,7 +51,7 @@ const BrainProject = (props) => {
         </p>
         <Link to="/brain">
           <button className="button_white">
-            {props.spanish ? "Saber más" : "Know more"}
+            {props.spanish ? "Saber más" : "Learn more"}
           </button>
         </Link>
       </div>

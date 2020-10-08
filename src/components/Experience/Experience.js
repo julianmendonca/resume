@@ -22,14 +22,14 @@ const BaTaxi = (props) => {
             <p>
               {props.spanish
                 ? "Reporte de incidencias en Trello"
-                : "Issues report in Trello"}
+                : "Issue submition in Trello"}
             </p>
           </li>
           <li className="job_task">
             <p>
               {props.spanish
-                ? "Alta de nuevos usuarios y explicacion del uso"
-                : "New users creation and explanation of the App"}
+                ? "Alta de nuevos usuarios y asesoramiento de la App"
+                : "New users registry and onboarding of the App"}
             </p>
           </li>
           <li className="job_task">
@@ -65,10 +65,10 @@ const Braindw = (props) => {
             <p>
               {props.spanish
                 ? parse(
-                    "Mantenimiento y extensión de <b>API</b> en <b>.Net</b>"
+                    "Mantenimiento y extensión de <b>API</b> en <b>C# .Net</b>"
                   )
                 : parse(
-                    "Maintainence and expansion of <b>API</b> using <b>.Net</b>"
+                    "Maintainence and expansion of <b>API</b> using <b>C# .Net</b>"
                   )}
             </p>
           </li>
@@ -83,10 +83,10 @@ const Braindw = (props) => {
             <p>
               {props.spanish
                 ? parse(
-                    "Creación de nuevas landings utilizando <b>React.js</b> o vanilla JS"
+                    "Creación de nuevas apps utilizando <b>React.js</b> o vanilla JS"
                   )
                 : parse(
-                    "Creation of new landings using <b>React.js</b> or vanilla JS"
+                    "Creation of new apps using <b>React.js</b> or vanilla JS"
                   )}
             </p>
           </li>
@@ -94,9 +94,22 @@ const Braindw = (props) => {
             <p>
               {props.spanish
                 ? parse(
-                    "Creación y mantenimiento de tests utilizando <b>Cypress</b>"
+                    "Optimizacion de aplicaciones <b>React.js</b> para manejo de trafico intensivo"
                   )
-                : parse("Tests creation and maintenance using <b>Cypress</b>")}
+                : parse(
+                    "Performace optimization in <b>React.js</b> apps to handle intensive traffic"
+                  )}
+            </p>
+          </li>
+          <li className="job_task">
+            <p>
+              {props.spanish
+                ? parse(
+                    "Creación y mantenimiento de End-to-End testing utilizando <b>Cypress</b> "
+                  )
+                : parse(
+                    "End-to-End tests creation and maintenance using <b>Cypress</b>"
+                  )}
             </p>
           </li>
           <li className="job_task">

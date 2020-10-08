@@ -6,7 +6,7 @@ const BrainProject = (props) => {
   return (
     <div style={{ paddingBottom: "30px" }}>
       <section className="align-center background_orange">
-        <Link to="/home">
+        <Link to="/">
           <button className="home_button button_white">
             {props.spanish ? "Inicio" : "Home"}
           </button>

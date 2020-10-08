@@ -8,7 +8,7 @@ import BrainProject from "../BrainProject/BrainProject";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 const Layout = (props) => {
-  const [spanish, setSpanish] = useState(true);
+  const [spanish, setSpanish] = useState(false);
   return (
     <Router>
       <div className="language_selector">
@@ -37,7 +37,7 @@ const Layout = (props) => {
           English
         </span>
       </div>
-      <Route path="/home">
+      <Route path="/" exact>
         <section className="align-center presentation_section">
           <Presentation spanish={spanish} />
         </section>

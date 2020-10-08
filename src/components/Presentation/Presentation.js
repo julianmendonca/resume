@@ -13,8 +13,8 @@ const Presentation = (props) => {
         />
         <p className="person_description">
           {props.spanish
-            ? "Soy una persona proactiva que busca siempre aprender y mejorar, tengo experiencia trabajando con React.js en frontend y C# .Net en backend"
-            : "I am a proactive person who is allways looking for new learnings and improvments, I have experience working with React.js in frontend and C# .Net in backend"}
+            ? "Soy una persona proactiva que busca siempre aprender y mejorar. Tengo experiencia trabajando con React.js en frontend y C# .Net en backend."
+            : "I am a proactive person who is always looking for new learnings and improvements. I have experience working with React.js in frontend and C# .Net in backend."}
         </p>
       </div>
       <img
