@@ -55,6 +55,19 @@ const Braindw = (props) => {
         />
         <h3>Full Stack Web Developer</h3>
         <h5>2019 - {props.spanish ? "Actualidad" : "Today"}</h5>
+        <h3
+          style={{ textDecoration: "underline", textTransform: "capitalize" }}
+        >
+          {props.spanish ? "Clientes" : "Clients"}:
+        </h3>
+        <div className="braindw_clients">
+          <img alt="Walmart" src={require("../../assets/images/walmart.png")} />
+          <img
+            alt="Musimundo"
+            src={require("../../assets/images/musimundo.png")}
+          />
+          <img alt="Easy" src={require("../../assets/images/easy.jpg")} />
+        </div>
       </div>
       <div className="job_information">
         <h4 className="underline">

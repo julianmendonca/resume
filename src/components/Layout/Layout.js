@@ -5,6 +5,7 @@ import Experience from "../Experience/Experience";
 import Projects from "../Projects/Projects";
 import ProfessorOak from "../ProfesorOak/ProfesorOak";
 import BrainProject from "../BrainProject/BrainProject";
+import Courses from "../Courses/Courses";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 const Layout = (props) => {
@@ -43,6 +44,9 @@ const Layout = (props) => {
         </section>
         <section className="align-center background_orange">
           <Technologies spanish={spanish}></Technologies>
+        </section>
+        <section className="align-center background_orange">
+          <Courses spanish={spanish}></Courses>
         </section>
         <section className="align-center">
           <Experience spanish={spanish}></Experience>
