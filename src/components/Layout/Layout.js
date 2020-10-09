@@ -24,27 +24,33 @@ const Layout = (props) => {
           className={
             spanish
               ? "white unselectable background_orange"
-              : " unselectable orange background_white"
+              : "unselectable orange background_white"
           }
           onClick={() => {
             setSpanish(true);
             window.localStorage.setItem("spanish", true);
           }}
         >
-          Español
+          Español{" "}
+          <span role="img" aria-label="bandera española">
+            🇪🇸
+          </span>
         </span>
         <span
           className={
             spanish
               ? "orange unselectable background_white"
-              : " unselectable white background_orange"
+              : "unselectable white background_orange"
           }
           onClick={() => {
             setSpanish(false);
             window.localStorage.setItem("spanish", false);
           }}
         >
-          English
+          English{" "}
+          <span role="img" aria-label="USA flag">
+            🇺🇸
+          </span>
         </span>
       </div>
       <Route path="/" exact>

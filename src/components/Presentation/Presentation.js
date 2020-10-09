@@ -1,4 +1,5 @@
 import React from "react";
+import presentationImage from "../../assets/images/presentation_image.jpg";
 
 const Presentation = (props) => {
   return (
@@ -8,7 +9,7 @@ const Presentation = (props) => {
         <h4 className="presentation_rol grey">full stack web developer</h4>
         <img
           alt="Julian Mendonca"
-          src={require("../../assets/images/presentation_image.jpg")}
+          src={presentationImage}
           className="mobile_presentation_image unselectable"
         />
         <p className="person_description">
@@ -19,7 +20,7 @@ const Presentation = (props) => {
       </div>
       <img
         alt="Julian Mendonca"
-        src={require("../../assets/images/presentation_image.jpg")}
+        src={presentationImage}
         className="presentation_image"
       />
     </div>
