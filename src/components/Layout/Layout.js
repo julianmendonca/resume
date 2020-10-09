@@ -10,7 +10,13 @@ import Courses from "../Courses/Courses";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 const Layout = (props) => {
-  const [spanish, setSpanish] = useState(false);
+  const [spanish, setSpanish] = useState(true);
+  useState(() => {
+    const setInitalLanguage = async () => {
+      if (window.localStorage.getItem("spanish") === "false") setSpanish(false);
+    };
+    setInitalLanguage();
+  }, []);
   return (
     <Router>
       <div className="language_selector">
@@ -22,6 +28,7 @@ const Layout = (props) => {
           }
           onClick={() => {
             setSpanish(true);
+            window.localStorage.setItem("spanish", true);
           }}
         >
           Español
@@ -34,6 +41,7 @@ const Layout = (props) => {
           }
           onClick={() => {
             setSpanish(false);
+            window.localStorage.setItem("spanish", false);
           }}
         >
           English

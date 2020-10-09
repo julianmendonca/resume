@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 const Certificate = (props) => {
+  const container = useRef(null);
+  useEffect(() => {
+    container.current.style.opacity = 1;
+  }, []);
   const download = () => {
     fetch(props.image, {
       method: "GET",
@@ -21,9 +25,9 @@ const Certificate = (props) => {
       });
   };
   return (
-    <div className="certificate_container">
+    <div ref={container} className="certificate_container">
       <button onClick={props.closeCertificateImage} className="close_button">
-        X
+        <img altc="Close" src={require("../../assets/icons/close.png")} />
       </button>
       <img
         alt={props.spanish ? "Certificado" : "Certificate"}

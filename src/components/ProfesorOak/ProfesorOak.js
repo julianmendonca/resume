@@ -50,9 +50,9 @@ const ProfesorOak = (props) => {
           <ul>
             <li className="white">
               <div>
-                <strong>!buscar</strong>
+                <strong className="comman_name">!buscar</strong>
               </div>{" "}
-              <p>
+              <p className="command_description">
                 {props.spanish
                   ? "Puede que aparezca un pokemon, puede tomar varios intentos."
                   : "A pokemon may appear, it can take a few attempts."}
@@ -60,9 +60,9 @@ const ProfesorOak = (props) => {
             </li>
             <li className="white">
               <div>
-                <strong>!enviar pokemon</strong>
+                <strong className="comman_name">!enviar pokemon</strong>
               </div>{" "}
-              <p>
+              <p className="command_description">
                 {props.spanish
                   ? "Cuando aparece un pokemon salvaje debes escribir !enviar + nombre_de_tu_pokemon para enviar un pokemon e intentar capturar al pokemon salvaje."
                   : "When a wild pokemon appear you must write !enviar + your_pokemon_name to send a pokemon and catch the wild pokemon."}
@@ -70,9 +70,9 @@ const ProfesorOak = (props) => {
             </li>
             <li className="white">
               <div>
-                <strong>!pendiente</strong>
+                <strong className="comman_name">!pendiente</strong>
               </div>{" "}
-              <p>
+              <p className="command_description">
                 {props.spanish
                   ? "Te dice si tenes algun pokemon pendiente por capturar."
                   : "Tells you if there is a pending pokemon to capture."}
@@ -80,9 +80,9 @@ const ProfesorOak = (props) => {
             </li>
             <li className="white">
               <div>
-                <strong>!pokedex pokemon</strong>
+                <strong className="comman_name">!pokedex pokemon</strong>
               </div>{" "}
-              <p>
+              <p className="command_description">
                 {props.spanish
                   ? "Muestra una imagen con los stats de un pokemon que poseas."
                   : "Shows an image with the stats of a pokemon you own."}
@@ -90,9 +90,9 @@ const ProfesorOak = (props) => {
             </li>
             <li className="white">
               <div>
-                <strong>!comandos</strong>
+                <strong className="comman_name">!comandos</strong>
               </div>{" "}
-              <p>
+              <p className="command_description">
                 {props.spanish
                   ? "Muestra todos los comandos disponibles. ( Algunos no funcionan en este widget)."
                   : "Show all available commands. ( Some of them doesen't work on this widget)."}

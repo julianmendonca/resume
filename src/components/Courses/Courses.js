@@ -7,10 +7,10 @@ const CourseItem = (props) => {
       <div>
         <h4>{props.spanish ? props.titleSpanish : props.titleEnglish}</h4>
         <h5>
-          {props.spanish ? "Fecha" : "Date"}:{props.date}
+          {props.spanish ? "Fecha" : "Date"}: {props.date}
         </h5>
         <h5>
-          {props.spanish ? "Duración" : "Duration"}:{props.duration}
+          {props.spanish ? "Duración" : "Duration"}: {props.duration}
         </h5>
       </div>
       <button
