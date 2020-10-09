@@ -1,33 +1,40 @@
 {
   "files": {
-    "main.css": "/static/css/main.20f44d54.chunk.css",
-    "main.js": "/static/js/main.d814f953.chunk.js",
-    "main.js.map": "/static/js/main.d814f953.chunk.js.map",
+    "main.css": "/static/css/main.22dcc410.chunk.css",
+    "main.js": "/static/js/main.add49b32.chunk.js",
+    "main.js.map": "/static/js/main.add49b32.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3bbf3189.js",
     "runtime-main.js.map": "/static/js/runtime-main.3bbf3189.js.map",
-    "static/js/2.df2b90b6.chunk.js": "/static/js/2.df2b90b6.chunk.js",
-    "static/js/2.df2b90b6.chunk.js.map": "/static/js/2.df2b90b6.chunk.js.map",
+    "static/js/2.f12b7ecb.chunk.js": "/static/js/2.f12b7ecb.chunk.js",
+    "static/js/2.f12b7ecb.chunk.js.map": "/static/js/2.f12b7ecb.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.adc4044288c894e3477ed591af0d0477.js": "/precache-manifest.adc4044288c894e3477ed591af0d0477.js",
+    "precache-manifest.11eead2dfd064621c79147bd05322d16.js": "/precache-manifest.11eead2dfd064621c79147bd05322d16.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.20f44d54.chunk.css.map": "/static/css/main.20f44d54.chunk.css.map",
-    "static/js/2.df2b90b6.chunk.js.LICENSE.txt": "/static/js/2.df2b90b6.chunk.js.LICENSE.txt",
+    "static/css/main.22dcc410.chunk.css.map": "/static/css/main.22dcc410.chunk.css.map",
+    "static/js/2.f12b7ecb.chunk.js.LICENSE.txt": "/static/js/2.f12b7ecb.chunk.js.LICENSE.txt",
+    "static/media/android.png": "/static/media/android.c0200ad1.png",
     "static/media/bataxi.png": "/static/media/bataxi.0aa385fb.png",
     "static/media/brain.png": "/static/media/brain.e15ced7d.png",
     "static/media/braindw.png": "/static/media/braindw.84f0a9c7.png",
     "static/media/css.png": "/static/media/css.b848d5d9.png",
+    "static/media/easy.jpg": "/static/media/easy.47e8cfdd.jpg",
+    "static/media/educacionit.jpg": "/static/media/educacionit.64da8bfc.jpg",
     "static/media/elastic.svg": "/static/media/elastic.d0109b29.svg",
     "static/media/html.png": "/static/media/html.25b694ba.png",
+    "static/media/java.png": "/static/media/java.dfb73dcc.png",
     "static/media/node.png": "/static/media/node.fd723f28.png",
+    "static/media/objetos.png": "/static/media/objetos.c5a4a6b0.png",
     "static/media/presentation_image.jpg": "/static/media/presentation_image.ade0d8b5.jpg",
     "static/media/profesor_oak.jpeg": "/static/media/profesor_oak.abd93730.jpeg",
     "static/media/react.png": "/static/media/react.82a318cc.png",
-    "static/media/sql.png": "/static/media/sql.6be648b9.png"
+    "static/media/sql.png": "/static/media/sql.f157784f.png",
+    "static/media/udemy.svg": "/static/media/udemy.c98cef89.svg",
+    "static/media/walmart.png": "/static/media/walmart.9b5b92e6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3bbf3189.js",
-    "static/js/2.df2b90b6.chunk.js",
-    "static/css/main.20f44d54.chunk.css",
-    "static/js/main.d814f953.chunk.js"
+    "static/js/2.f12b7ecb.chunk.js",
+    "static/css/main.22dcc410.chunk.css",
+    "static/js/main.add49b32.chunk.js"
   ]
 }

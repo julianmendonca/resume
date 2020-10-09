@@ -65,12 +65,16 @@ const Braindw = (props) => {
           {props.spanish ? "Clientes" : "Clients"}:
         </h3>
         <div className="braindw_clients">
-          <img alt="Walmart" src={require("../../assets/images/walmart.png")} />
           <img
             alt="Musimundo"
             src={require("../../assets/images/musimundo.png")}
           />
           <img alt="Easy" src={require("../../assets/images/easy.jpg")} />
+          <img
+            alt="SommierCenter"
+            src={require("../../assets/images/sommiercenter.png")}
+          />
+          <img alt="Walmart" src={require("../../assets/images/walmart.png")} />
         </div>
       </div>
       <div className="job_information">
