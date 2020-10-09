@@ -1,26 +1,35 @@
 import React, { useState } from "react";
 import Certificate from "../Certificate/Certificate";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const CourseItem = (props) => {
   return (
     <li className="course_item">
-      <div>
-        <h4>{props.spanish ? props.titleSpanish : props.titleEnglish}</h4>
-        <h5>
-          {props.spanish ? "Fecha" : "Date"}: {props.date}
-        </h5>
-        <h5>
-          {props.spanish ? "Duración" : "Duration"}: {props.duration}
-        </h5>
-      </div>
-      <button
-        className="button_white button_small"
-        onClick={(e) => {
-          props.setCertificate(props.image);
-        }}
+      <ScrollAnimation
+        className=""
+        animateIn={props.left ? "bounceInLeft" : "bounceInRight"}
+        duration={1}
+        animateOnce={true}
+        offset={5}
       >
-        {props.spanish ? "Ver certificado" : "View certificate"}
-      </button>
+        <div>
+          <h4>{props.spanish ? props.titleSpanish : props.titleEnglish}</h4>
+          <h5>
+            {props.spanish ? "Fecha" : "Date"}: {props.date}
+          </h5>
+          <h5>
+            {props.spanish ? "Duración" : "Duration"}: {props.duration}
+          </h5>
+        </div>
+        <button
+          className="button_white button_small"
+          onClick={(e) => {
+            props.setCertificate(props.image);
+          }}
+        >
+          {props.spanish ? "Ver certificado" : "View certificate"}
+        </button>
+      </ScrollAnimation>
     </li>
   );
 };
@@ -29,6 +38,8 @@ const Courses = (props) => {
   const [certificate, setCertificate] = useState("");
   const closeCertificateImage = () => {
     setCertificate("");
+
+    document.querySelector("body").classList.remove("overflow_hidden");
   };
   return (
     <div className="cursos_container section_holder white">
@@ -60,6 +71,7 @@ const Courses = (props) => {
             titleEnglish="Java Standard Programming 8.0"
             date="2017"
             duration="40hs"
+            left={true}
           />
           <CourseItem
             image={require("../../assets/images/courses/it/objetos.png")}
@@ -69,6 +81,7 @@ const Courses = (props) => {
             titleEnglish="Introduction to Object Paradigma  "
             date="2019"
             duration="9hs"
+            left={true}
           />
           <CourseItem
             image={require("../../assets/images/courses/it/sql.png")}
@@ -78,6 +91,7 @@ const Courses = (props) => {
             titleEnglish="Introduction to Data Bases and SQL"
             date="2017"
             duration="12hs"
+            left={true}
           />
           <CourseItem
             image={require("../../assets/images/courses/it/android.png")}
@@ -87,6 +101,7 @@ const Courses = (props) => {
             titleEnglish="Android programing"
             date="2017"
             duration="15hs"
+            left={true}
           />
         </ul>
         <ul className="courses_list">
@@ -104,6 +119,7 @@ const Courses = (props) => {
             titleEnglish="Game development with Unity 3D C#"
             date="2018"
             duration="10hs"
+            left={false}
           />
           <CourseItem
             setCertificate={setCertificate}
@@ -112,6 +128,7 @@ const Courses = (props) => {
             titleEnglish="React - The complete guide (Hooks, React Router)"
             date="2017"
             duration="10hs"
+            left={false}
           />
           <CourseItem
             setCertificate={setCertificate}
@@ -120,6 +137,7 @@ const Courses = (props) => {
             titleEnglish="Android Studio"
             date="2017"
             duration="10hs"
+            left={false}
           />
         </ul>
       </div>

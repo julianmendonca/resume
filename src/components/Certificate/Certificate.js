@@ -2,8 +2,10 @@ import React, { useEffect, useRef } from "react";
 
 const Certificate = (props) => {
   const container = useRef(null);
+  const certificate = useRef(null);
   useEffect(() => {
-    container.current.style.opacity = 1;
+    certificate.current.style.opacity = 1;
+    document.querySelector("body").classList.add("overflow_hidden");
   }, []);
   const download = () => {
     fetch(props.image, {
@@ -25,17 +27,23 @@ const Certificate = (props) => {
       });
   };
   return (
-    <div ref={container} className="certificate_container">
-      <button onClick={props.closeCertificateImage} className="close_button">
-        <img altc="Close" src={require("../../assets/icons/close.png")} />
-      </button>
-      <img
-        alt={props.spanish ? "Certificado" : "Certificate"}
-        src={props.image}
-      />
-      <button className="button_orange" onClick={download}>
-        {props.spanish ? "Descargar" : "Download"}
-      </button>
+    <div ref={container} className="grey_background">
+      <div ref={certificate} className="certificate_container">
+        <button className="close_button">
+          <img
+            alt="Close"
+            onClick={props.closeCertificateImage}
+            src={require("../../assets/icons/close.png")}
+          />
+        </button>
+        <img
+          alt={props.spanish ? "Certificado" : "Certificate"}
+          src={props.image}
+        />
+        <button className="button_orange" onClick={download}>
+          {props.spanish ? "Descargar" : "Download"}
+        </button>
+      </div>
     </div>
   );
 };

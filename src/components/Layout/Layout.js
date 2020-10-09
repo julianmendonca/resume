@@ -19,12 +19,12 @@ const Layout = (props) => {
   }, []);
   return (
     <Router>
-      <div className="language_selector">
+      <div className={"language_selector"}>
         <span
           className={
             spanish
-              ? "white unselectable background_orange"
-              : " unselectable orange background_white"
+              ? "white unselectable language_background_orange"
+              : " unselectable orange language_background_white"
           }
           onClick={() => {
             setSpanish(true);
@@ -36,8 +36,8 @@ const Layout = (props) => {
         <span
           className={
             spanish
-              ? "orange unselectable background_white"
-              : " unselectable white background_orange"
+              ? "orange unselectable language_background_white"
+              : " unselectable white language_background_orange"
           }
           onClick={() => {
             setSpanish(false);
@@ -48,7 +48,7 @@ const Layout = (props) => {
         </span>
       </div>
       <Route path="/" exact>
-        <section className="align-center presentation_section">
+        <section className="align-center presentation_section background_white">
           <Tilt
             options={{ max: 25, scale: 1 }}
             style={{ display: "flex", justifyContent: "center" }}
@@ -62,7 +62,7 @@ const Layout = (props) => {
         <section className="align-center background_orange">
           <Courses spanish={spanish}></Courses>
         </section>
-        <section className="align-center">
+        <section className="align-center background_white">
           <Experience spanish={spanish}></Experience>
         </section>
         <section className="align-center background_orange">

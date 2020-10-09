@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 .unselectable {
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
@@ -153,8 +156,10 @@
   justify-content: space-around;
   align-items: center;
   padding-bottom: 30px;
+  width: 100%;
 }
 .project_holder_brain {
+  width: 100%;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
@@ -355,8 +360,20 @@ p {
 .course_item:not(:first-of-type) {
   margin: 40px 0;
 }
-
+.overflow_hidden {
+  overflow: hidden;
+}
+.grey_background {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 1000px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
 .certificate_container {
+  z-index: 2;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -381,7 +398,6 @@ p {
 }
 .certificate_container .close_button {
   width: 90%;
-  cursor: pointer;
   color: black;
   text-align: right;
   margin: 0;
@@ -394,6 +410,7 @@ p {
 }
 .certificate_container .close_button img {
   width: 27px;
+  cursor: pointer;
 }
 .comman_name {
   padding: 5px 10px;
@@ -405,6 +422,12 @@ p {
 }
 .command_description {
   color: rgba(255, 255, 255, 0.7);
+}
+
+.animate_component {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 /* Text Align*/
 .align_center {
@@ -429,6 +452,9 @@ p {
 .grey {
   color: rgb(94, 94, 94);
 }
+.black {
+  color: black;
+}
 /*distance*/
 
 .align-center {
@@ -442,8 +468,16 @@ p {
 .background_cream {
   background-color: rgb(255, 244, 220);
 }
-
+.background_white {
+  background-color: white;
+}
 .background_orange {
+  background-color: rgb(241, 130, 25);
+}
+.language_background_white {
+  background-color: white;
+}
+.language_background_orange {
   background-color: rgb(241, 130, 25);
 }
 
@@ -576,6 +610,7 @@ p {
   }
   .project_holder {
     flex-direction: column;
+    width: 100%;
   }
   .oak_presentation {
     width: 90%;

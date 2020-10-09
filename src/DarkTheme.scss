@@ -1,0 +1,23 @@
+.dark {
+  .language_background_white {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+  }
+  .section_title {
+    color: rgb(241, 130, 25);
+  }
+  .language_background_orange {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-shadow: 1px 1px 24px white;
+  }
+  .background_white {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .black {
+    color: white;
+  }
+  .background_orange {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
