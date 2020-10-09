@@ -4,14 +4,15 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 const CourseItem = (props) => {
   return (
-    <li className="course_item">
-      <ScrollAnimation
-        className=""
-        animateIn={props.left ? "bounceInLeft" : "bounceInRight"}
-        duration={1}
-        animateOnce={true}
-        offset={5}
-      >
+    <ScrollAnimation
+      className=""
+      animateIn={props.left ? "bounceInLeft" : "bounceInRight"}
+      duration={1}
+      animateOnce={true}
+      offset={5}
+      style={{ padding: "20px 0" }}
+    >
+      <li className="course_item">
         <div>
           <h4>{props.spanish ? props.titleSpanish : props.titleEnglish}</h4>
           <h5>
@@ -29,8 +30,8 @@ const CourseItem = (props) => {
         >
           {props.spanish ? "Ver certificado" : "View certificate"}
         </button>
-      </ScrollAnimation>
-    </li>
+      </li>
+    </ScrollAnimation>
   );
 };
 

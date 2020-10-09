@@ -53,6 +53,7 @@ body {
 }
 .section_title {
   font-family: "Sansita Swashed", cursive;
+  text-decoration: underline;
   font-size: 40px;
 }
 .presentation_section {
