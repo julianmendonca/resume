@@ -20,4 +20,26 @@
   .background_orange {
     background-color: rgba(0, 0, 0, 0.7);
   }
+  .button_orange {
+    color: black;
+  }
+  .button_white {
+    color: black;
+  }
+  .button_orange:hover {
+    color: white;
+    background-color: black;
+    border-color: black;
+  }
+  .button_white:hover {
+    color: white;
+    background-color: black;
+    border-color: black;
+    box-shadow: 0 0 10px 1px white;
+  }
+  @media (max-width: 900px) {
+    .job_information {
+      box-shadow: 0 0 10px 3px white;
+    }
+  }
 }

@@ -7,6 +7,12 @@ body {
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
 }
+button {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
 .language_selector {
   margin: 0;
   width: 100%;
@@ -55,9 +61,6 @@ body {
   font-family: "Sansita Swashed", cursive;
   text-decoration: underline;
   font-size: 40px;
-}
-.presentation_section {
-  padding-top: 40px;
 }
 .presentation_title {
   font-size: 60px;
@@ -354,7 +357,7 @@ p {
   height: 40px;
 }
 .course_image {
-  height: 30px;
+  height: 60px;
   margin: 0 auto;
 }
 
@@ -430,6 +433,15 @@ p {
   flex-direction: row;
   justify-content: space-around;
 }
+.darkmode_switch {
+  width: 100%;
+  font-size: 20px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
 /* Text Align*/
 .align_center {
   text-align: center;
@@ -471,15 +483,19 @@ p {
 }
 .background_white {
   background-color: white;
+  transition: all 0.5s;
 }
 .background_orange {
   background-color: rgb(241, 130, 25);
+  transition: all 0.5s;
 }
 .language_background_white {
   background-color: white;
+  transition: all 0.5s;
 }
 .language_background_orange {
   background-color: rgb(241, 130, 25);
+  transition: all 0.5s;
 }
 
 /* Buttons */
@@ -544,9 +560,6 @@ p {
     max-width: 400px;
     min-width: 200px;
   }
-  .presentation_section {
-    padding-top: 20px;
-  }
   .presentation_holder {
     width: 100%;
   }
@@ -576,6 +589,8 @@ p {
     padding-top: 15px;
     border: 1px solid black;
     border-radius: 20px;
+    width: 100%;
+    margin-top: 15px;
   }
   .job_item {
     display: flex;
@@ -584,9 +599,6 @@ p {
   }
   .job_item:not(:last-child) {
     margin-bottom: 25px;
-  }
-  .job_information {
-    width: 100%;
   }
 
   .job_icon_holder {
@@ -660,5 +672,14 @@ p {
   }
   .button_small {
     font-size: 10px;
+  }
+  .course_image {
+    height: 30px;
+  }
+
+  .home_button {
+    padding: 10px 20px;
+    font-size: 15px;
+    margin: 20px 0 0 0;
   }
 }
