@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-
+import ScrollAnimation from "react-animate-on-scroll";
 const ProfesorOak = (props) => {
   useEffect(() => {
     try {
@@ -19,11 +19,13 @@ const ProfesorOak = (props) => {
   return (
     <div className="background_orange">
       <div className="professor_oak_container background_orange">
-        <Link to="/">
-          <button className="home_button button_white">
-            {props.spanish ? "Inicio" : "Home"}
-          </button>
-        </Link>
+        <div className="align_start" style={{ width: "100%" }}>
+          <Link to="/">
+            <button className="home_button button_white">
+              {props.spanish ? "Inicio" : "Home"}
+            </button>
+          </Link>
+        </div>
         <div className="oak_presentation">
           <h1 className="section_title white">
             {props.spanish ? "Profesor Oak" : "Professor Oak"}
@@ -48,56 +50,96 @@ const ProfesorOak = (props) => {
             {props.spanish ? "Comandos disponibles" : "Available  commands"}:
           </h2>
           <ul>
-            <li className="white">
-              <div>
-                <strong className="comman_name">!buscar</strong>
-              </div>{" "}
-              <p className="command_description">
-                {props.spanish
-                  ? "Puede que aparezca un pokemon, puede tomar varios intentos."
-                  : "A pokemon may appear, it can take a few attempts."}
-              </p>
-            </li>
-            <li className="white">
-              <div>
-                <strong className="comman_name">!enviar pokemon</strong>
-              </div>{" "}
-              <p className="command_description">
-                {props.spanish
-                  ? "Cuando aparece un pokemon salvaje debes escribir !enviar + nombre_de_tu_pokemon para enviar un pokemon e intentar capturar al pokemon salvaje."
-                  : "When a wild pokemon appear you must write !enviar + your_pokemon_name to send a pokemon and catch the wild pokemon."}
-              </p>
-            </li>
-            <li className="white">
-              <div>
-                <strong className="comman_name">!pendiente</strong>
-              </div>{" "}
-              <p className="command_description">
-                {props.spanish
-                  ? "Te dice si tenes algun pokemon pendiente por capturar."
-                  : "Tells you if there is a pending pokemon to capture."}
-              </p>
-            </li>
-            <li className="white">
-              <div>
-                <strong className="comman_name">!pokedex pokemon</strong>
-              </div>{" "}
-              <p className="command_description">
-                {props.spanish
-                  ? "Muestra una imagen con los stats de un pokemon que poseas."
-                  : "Shows an image with the stats of a pokemon you own."}
-              </p>
-            </li>
-            <li className="white">
-              <div>
-                <strong className="comman_name">!comandos</strong>
-              </div>{" "}
-              <p className="command_description">
-                {props.spanish
-                  ? "Muestra todos los comandos disponibles. ( Algunos no funcionan en este widget)."
-                  : "Show all available commands. ( Some of them doesen't work on this widget)."}
-              </p>
-            </li>
+            <ScrollAnimation
+              className=""
+              animateIn="bounceInLeft"
+              duration={1}
+              animateOnce={true}
+              offset={5}
+            >
+              <li className="white">
+                <div>
+                  <strong className="comman_name">!buscar</strong>
+                </div>{" "}
+                <p className="command_description">
+                  {props.spanish
+                    ? "Puede que aparezca un pokemon, puede tomar varios intentos."
+                    : "A pokemon may appear, it can take a few attempts."}
+                </p>
+              </li>
+            </ScrollAnimation>
+            <ScrollAnimation
+              className=""
+              animateIn="bounceInLeft"
+              duration={1}
+              animateOnce={true}
+              offset={5}
+            >
+              <li className="white">
+                <div>
+                  <strong className="comman_name">!enviar pokemon</strong>
+                </div>{" "}
+                <p className="command_description">
+                  {props.spanish
+                    ? "Cuando aparece un pokemon salvaje debes escribir !enviar + nombre_de_tu_pokemon para enviar un pokemon e intentar capturar al pokemon salvaje."
+                    : "When a wild pokemon appear you must write !enviar + your_pokemon_name to send a pokemon and catch the wild pokemon."}
+                </p>
+              </li>
+            </ScrollAnimation>
+            <ScrollAnimation
+              className=""
+              animateIn="bounceInLeft"
+              duration={1}
+              animateOnce={true}
+              offset={5}
+            >
+              <li className="white">
+                <div>
+                  <strong className="comman_name">!pendiente</strong>
+                </div>{" "}
+                <p className="command_description">
+                  {props.spanish
+                    ? "Te dice si tenes algun pokemon pendiente por capturar."
+                    : "Tells you if there is a pending pokemon to capture."}
+                </p>
+              </li>
+            </ScrollAnimation>
+            <ScrollAnimation
+              className=""
+              animateIn="bounceInLeft"
+              duration={1}
+              animateOnce={true}
+              offset={5}
+            >
+              <li className="white">
+                <div>
+                  <strong className="comman_name">!pokedex pokemon</strong>
+                </div>{" "}
+                <p className="command_description">
+                  {props.spanish
+                    ? "Muestra una imagen con los stats de un pokemon que poseas."
+                    : "Shows an image with the stats of a pokemon you own."}
+                </p>
+              </li>
+            </ScrollAnimation>
+            <ScrollAnimation
+              className=""
+              animateIn="bounceInLeft"
+              duration={1}
+              animateOnce={true}
+              offset={5}
+            >
+              <li className="white">
+                <div>
+                  <strong className="comman_name">!comandos</strong>
+                </div>{" "}
+                <p className="command_description">
+                  {props.spanish
+                    ? "Muestra todos los comandos disponibles. ( Algunos no funcionan en este widget)."
+                    : "Show all available commands. ( Some of them doesen't work on this widget)."}
+                </p>
+              </li>
+            </ScrollAnimation>
           </ul>
           <div className="discord_chat">
             <h5 className="white">

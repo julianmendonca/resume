@@ -13,6 +13,9 @@ button {
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
 }
+.MuiSwitch-root {
+  margin-right: 15px;
+}
 .language_selector {
   margin: 0;
   width: 100%;
@@ -441,6 +444,11 @@ p {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  margin-right: 150px;
+}
+
+.oak_presentation ul p {
+  padding-left: 15px;
 }
 /* Text Align*/
 .align_center {
@@ -455,7 +463,7 @@ p {
 }
 /* Colors */
 .orange {
-  color: rgb(241, 130, 25);
+  color: #47ba67;
 }
 
 .white {
@@ -479,22 +487,22 @@ p {
 /*background*/
 
 .background_cream {
-  background-color: rgb(255, 244, 220);
+  background-color: rgb(235, 228, 212);
 }
 .background_white {
-  background-color: white;
+  background-color: rgb(235, 228, 212);
   transition: all 0.5s;
 }
 .background_orange {
-  background-color: rgb(241, 130, 25);
+  background-color: #47ba67;
   transition: all 0.5s;
 }
 .language_background_white {
-  background-color: white;
+  background-color: rgb(235, 228, 212);
   transition: all 0.5s;
 }
 .language_background_orange {
-  background-color: rgb(241, 130, 25);
+  background-color: #47ba67;
   transition: all 0.5s;
 }
 
@@ -502,7 +510,7 @@ p {
 .button_white {
   background-color: white;
   border: 4px solid white;
-  color: rgb(241, 130, 25);
+  color: #47ba67;
   padding: 15px 30px;
   border-radius: 15px;
   font-size: 20px;
@@ -516,8 +524,8 @@ p {
 .button_orange {
   margin-top: 10px;
   background-color: white;
-  border: 4px solid rgb(241, 130, 25);
-  color: rgb(241, 130, 25);
+  border: 4px solid #47ba67;
+  color: #47ba67;
   padding: 10px 20px;
   border-radius: 15px;
   font-size: 20px;
@@ -529,7 +537,7 @@ p {
   outline: none;
 }
 .button_orange:hover {
-  background-color: rgb(241, 130, 25);
+  background-color: #47ba67;
   color: white;
 }
 .button_small {
@@ -539,7 +547,7 @@ p {
   font-weight: bolder;
 }
 .button_white:hover {
-  background-color: rgb(241, 130, 25);
+  background-color: #47ba67;
   color: white;
 }
 @media (max-width: 900px) {
@@ -680,6 +688,9 @@ p {
   .home_button {
     padding: 10px 20px;
     font-size: 15px;
-    margin: 20px 0 0 0;
+    margin: 20px 0 0 10px;
+  }
+  .oak_presentation ul {
+    padding: 0;
   }
 }
