@@ -8,7 +8,7 @@ function App() {
   const [theme, setTheme] = useState(() =>
     window.localStorage.getItem("theme") !== null
       ? window.localStorage.getItem("theme")
-      : "light"
+      : "dark"
   );
   const setDarkTheme = () => {
     setTheme("dark");

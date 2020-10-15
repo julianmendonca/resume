@@ -22,14 +22,18 @@ const CourseItem = (props) => {
             {props.spanish ? "Duración" : "Duration"}: {props.duration}
           </h5>
         </div>
-        <button
-          className="button_white button_small"
-          onClick={(e) => {
-            props.setCertificate(props.image);
-          }}
-        >
-          {props.spanish ? "Ver certificado" : "View certificate"}
-        </button>
+        {props.button === undefined ? (
+          <button
+            className="button_white button_small"
+            onClick={(e) => {
+              props.setCertificate(props.image);
+            }}
+          >
+            {props.spanish ? "Ver certificado" : "View certificate"}
+          </button>
+        ) : (
+          ""
+        )}
       </li>
     </ScrollAnimation>
   );
@@ -110,35 +114,38 @@ const Courses = (props) => {
             <img
               alt="Udemy"
               src={require("../../assets/icons/udemy.svg")}
-              className="course_image"
+              className="course_image white_background_on_darkmode"
             />
           </div>
+          <CourseItem
+            setCertificate={setCertificate}
+            image={require("../../assets/images/courses/udemy/react.jpg")}
+            spanish={props.spanish}
+            titleSpanish="React - La guia completa (Hooks, React Router)"
+            titleEnglish="React - The complete guide (Hooks, React Router)"
+            date="2020"
+            duration="40,5hs"
+            left={false}
+          />
           <CourseItem
             setCertificate={setCertificate}
             spanish={props.spanish}
             titleSpanish="Desarrollo de juegos con Unity 3D C#"
             titleEnglish="Game development with Unity 3D C#"
             date="2018"
-            duration="10hs"
+            duration="22hs"
             left={false}
+            button={false}
           />
           <CourseItem
             setCertificate={setCertificate}
             spanish={props.spanish}
-            titleSpanish="React - La guia completa (Hooks, React Router)"
-            titleEnglish="React - The complete guide (Hooks, React Router)"
-            date="2017"
-            duration="10hs"
+            titleSpanish="The Web Developer Bootcamp"
+            titleEnglish="The Web Developer Bootcamp"
+            date="2019"
+            duration="60,5hs"
             left={false}
-          />
-          <CourseItem
-            setCertificate={setCertificate}
-            spanish={props.spanish}
-            titleSpanish="Android Studio"
-            titleEnglish="Android Studio"
-            date="2017"
-            duration="10hs"
-            left={false}
+            button={false}
           />
         </ul>
       </div>

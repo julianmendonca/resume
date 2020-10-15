@@ -7,7 +7,7 @@ const ReactProject = (props) => {
   return (
     <ScrollAnimation
       className="animate_component"
-      animateIn="bounceInLeft"
+      animateIn="bounceInRight"
       duration={1}
       animateOnce={true}
       offset={5}
@@ -120,7 +120,7 @@ const Projects = (props) => {
         {props.spanish ? "Proyectos Personales" : "Personal Projects"}
       </h1>
       <ProfesorOak spanish={props.spanish}></ProfesorOak>
-      <BrainProject spanish={props.spanish}></BrainProject>
+      {true ? "" : <BrainProject spanish={props.spanish}></BrainProject>}
       <ReactProject spanish={props.spanish}></ReactProject>
     </div>
   );

@@ -65,7 +65,7 @@ const Braindw = (props) => {
       <div className="job_item black">
         <div className="job_icon_holder">
           <img
-            className="company_logo"
+            className="company_logo white_background_on_darkmode"
             alt="Braindw"
             src={require("../../assets/icons/braindw.png")}
           />
@@ -78,10 +78,11 @@ const Braindw = (props) => {
           </h3>
           <div className="braindw_clients">
             <img
+              className="white_background_on_darkmode"
               alt="Musimundo"
               src={require("../../assets/images/musimundo.png")}
             />
-            <img alt="Easy" src={require("../../assets/images/easy.jpg")} />
+            <img alt="Easy" src={require("../../assets/images/easy.png")} />
             <img
               alt="SommierCenter"
               src={require("../../assets/images/sommiercenter.png")}
