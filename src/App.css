@@ -450,6 +450,12 @@ p {
 .oak_presentation ul p {
   padding-left: 15px;
 }
+
+.back_icon {
+  filter: brightness(0) invert(0);
+  width: 40px;
+  padding: 10px 40px;
+}
 /* Text Align*/
 .align_center {
   text-align: center;

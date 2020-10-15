@@ -21,8 +21,19 @@ const ProfesorOak = (props) => {
       <div className="professor_oak_container background_orange">
         <div className="align_start" style={{ width: "100%" }}>
           <Link to="/">
-            <button className="home_button button_white">
-              {props.spanish ? "Inicio" : "Home"}
+            <button
+              style={{
+                backgroundColor: "transparent",
+                border: "none",
+                outline: "none",
+                cursor: "pointer",
+              }}
+            >
+              <img
+                alt="Home"
+                src={require("../../assets/icons/return.svg")}
+                className="back_icon"
+              />
             </button>
           </Link>
         </div>
