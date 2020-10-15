@@ -43,7 +43,7 @@ const BaTaxi = (props) => {
             <li className="job_task">
               <p>
                 {props.spanish
-                  ? "Soporte via teléfono y mail"
+                  ? "Soporte vía teléfono y mail"
                   : "Phone and mail support"}
               </p>
             </li>
@@ -131,7 +131,7 @@ const Braindw = (props) => {
               <p>
                 {props.spanish
                   ? parse(
-                      "Optimizacion de aplicaciones <b>React.js</b> para manejo de trafico intensivo"
+                      "Optimización de aplicaciones <b>React.js</b> para manejo de trafico intensivo"
                     )
                   : parse(
                       "Performace optimization in <b>React.js</b> apps to handle intensive traffic"
