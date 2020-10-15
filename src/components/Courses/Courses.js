@@ -119,16 +119,6 @@ const Courses = (props) => {
           </div>
           <CourseItem
             setCertificate={setCertificate}
-            image={require("../../assets/images/courses/udemy/react.jpg")}
-            spanish={props.spanish}
-            titleSpanish="React - La guia completa (Hooks, React Router)"
-            titleEnglish="React - The complete guide (Hooks, React Router)"
-            date="2020"
-            duration="40,5hs"
-            left={false}
-          />
-          <CourseItem
-            setCertificate={setCertificate}
             spanish={props.spanish}
             titleSpanish="Desarrollo de juegos con Unity 3D C#"
             titleEnglish="Game development with Unity 3D C#"
@@ -146,6 +136,16 @@ const Courses = (props) => {
             duration="60,5hs"
             left={false}
             button={false}
+          />
+          <CourseItem
+            setCertificate={setCertificate}
+            image={require("../../assets/images/courses/udemy/react.jpg")}
+            spanish={props.spanish}
+            titleSpanish="React - La guia completa (Hooks, React Router)"
+            titleEnglish="React - The complete guide (Hooks, React Router)"
+            date="2020"
+            duration="40,5hs"
+            left={false}
           />
         </ul>
       </div>
