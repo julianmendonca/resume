@@ -20,21 +20,12 @@ const ProfesorOak = (props) => {
     <div className="background_orange">
       <div className="professor_oak_container background_orange">
         <div className="align_start" style={{ width: "100%" }}>
-          <Link to="/">
-            <button
-              style={{
-                backgroundColor: "transparent",
-                border: "none",
-                outline: "none",
-                cursor: "pointer",
-              }}
-            >
-              <img
-                alt="Home"
-                src={require("../../assets/icons/return.svg")}
-                className="back_icon"
-              />
-            </button>
+          <Link to="/" style={{ margin: "10px 40px" }}>
+            <img
+              alt="Home"
+              src={require("../../assets/icons/return.svg")}
+              className="back_icon"
+            />
           </Link>
         </div>
         <div className="oak_presentation">

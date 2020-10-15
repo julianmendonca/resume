@@ -454,7 +454,6 @@ p {
 .back_icon {
   filter: brightness(0) invert(1);
   width: 40px;
-  padding: 10px 40px;
 }
 /* Text Align*/
 .align_center {
