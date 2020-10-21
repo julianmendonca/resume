@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.e058dc63.chunk.css",
-    "main.js": "/static/js/main.9d3372b5.chunk.js",
-    "main.js.map": "/static/js/main.9d3372b5.chunk.js.map",
+    "main.css": "/static/css/main.be1326a6.chunk.css",
+    "main.js": "/static/js/main.e73c9d84.chunk.js",
+    "main.js.map": "/static/js/main.e73c9d84.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3bbf3189.js",
     "runtime-main.js.map": "/static/js/runtime-main.3bbf3189.js.map",
-    "static/js/2.f486d233.chunk.js": "/static/js/2.f486d233.chunk.js",
-    "static/js/2.f486d233.chunk.js.map": "/static/js/2.f486d233.chunk.js.map",
+    "static/js/2.6d1139c5.chunk.js": "/static/js/2.6d1139c5.chunk.js",
+    "static/js/2.6d1139c5.chunk.js.map": "/static/js/2.6d1139c5.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a0c93b3b81f2493d29503421398a5827.js": "/precache-manifest.a0c93b3b81f2493d29503421398a5827.js",
+    "precache-manifest.a0fba8134b5b37979d0af5cc89af7e2e.js": "/precache-manifest.a0fba8134b5b37979d0af5cc89af7e2e.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.e058dc63.chunk.css.map": "/static/css/main.e058dc63.chunk.css.map",
-    "static/js/2.f486d233.chunk.js.LICENSE.txt": "/static/js/2.f486d233.chunk.js.LICENSE.txt",
+    "static/css/main.be1326a6.chunk.css.map": "/static/css/main.be1326a6.chunk.css.map",
+    "static/js/2.6d1139c5.chunk.js.LICENSE.txt": "/static/js/2.6d1139c5.chunk.js.LICENSE.txt",
     "static/media/android.png": "/static/media/android.c0200ad1.png",
     "static/media/bataxi.png": "/static/media/bataxi.0aa385fb.png",
     "static/media/brain.png": "/static/media/brain.e15ced7d.png",
@@ -29,14 +29,15 @@
     "static/media/profesor_oak.jpeg": "/static/media/profesor_oak.abd93730.jpeg",
     "static/media/react.png": "/static/media/react.82a318cc.png",
     "static/media/react.jpg": "/static/media/react.c1a7bd90.jpg",
+    "static/media/return.svg": "/static/media/return.b3cfa11f.svg",
     "static/media/sql.png": "/static/media/sql.f157784f.png",
-    "static/media/udemy.svg": "/static/media/udemy.575dac4d.svg",
+    "static/media/udemy.svg": "/static/media/udemy.c98cef89.svg",
     "static/media/walmart.png": "/static/media/walmart.9b5b92e6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3bbf3189.js",
-    "static/js/2.f486d233.chunk.js",
-    "static/css/main.e058dc63.chunk.css",
-    "static/js/main.9d3372b5.chunk.js"
+    "static/js/2.6d1139c5.chunk.js",
+    "static/css/main.be1326a6.chunk.css",
+    "static/js/main.e73c9d84.chunk.js"
   ]
 }
