@@ -8,7 +8,7 @@ const Certificate = (props) => {
     document.querySelector("body").classList.add("overflow_hidden");
   }, []);
   const download = () => {
-    fetch(props.image, {
+    fetch(props.certificate.image, {
       method: "GET",
       headers: {},
     })
@@ -17,7 +17,7 @@ const Certificate = (props) => {
           const url = window.URL.createObjectURL(new Blob([buffer]));
           const link = document.createElement("a");
           link.href = url;
-          link.setAttribute("download", "image.png"); //or any other extension
+          link.setAttribute("download", props.spanish ?props.certificate.titleSpanish : props.certificate.titleEnglish +'.png'); //or any other extension
           document.body.appendChild(link);
           link.click();
         });
@@ -27,7 +27,7 @@ const Certificate = (props) => {
       });
   };
   return (
-    <div ref={container} className="grey_background">
+    <div ref={container} className="grey_background ">
       <div ref={certificate} className="certificate_container">
         <button className="close_button">
           <img
@@ -38,7 +38,7 @@ const Certificate = (props) => {
         </button>
         <img
           alt={props.spanish ? "Certificado" : "Certificate"}
-          src={props.image}
+          src={props.certificate.image}
         />
         <button className="button_orange" onClick={download}>
           {props.spanish ? "Descargar" : "Download"}

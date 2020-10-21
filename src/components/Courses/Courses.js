@@ -26,7 +26,7 @@ const CourseItem = (props) => {
           <button
             className="button_white button_small"
             onClick={(e) => {
-              props.setCertificate(props.image);
+              props.setCertificate({titleSpanish:props.titleSpanish,titleEnglish:props.titleEnglish,image:props.image});
             }}
           >
             {props.spanish ? "Ver certificado" : "View certificate"}
@@ -40,18 +40,18 @@ const CourseItem = (props) => {
 };
 
 const Courses = (props) => {
-  const [certificate, setCertificate] = useState("");
+  const [certificate, setCertificate] = useState({titleSpanish:'',titleEnglish:'',image:''});
   const closeCertificateImage = () => {
-    setCertificate("");
-
+    setCertificate({titleSpanish:'',titleEnglish:'',image:''});
     document.querySelector("body").classList.remove("overflow_hidden");
   };
   return (
     <div className="cursos_container section_holder white">
-      {certificate !== "" ? (
+      {certificate.image !== "" ? (
         <Certificate
           closeCertificateImage={closeCertificateImage}
-          image={certificate}
+          certificate={certificate}
+          spanish={props.spanish}
         />
       ) : (
         ""
