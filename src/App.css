@@ -1,6 +1,11 @@
 body {
   overflow-x: hidden;
 }
+a {
+  text-decoration: none;
+  font-weight: 400;
+  color: inherit;
+}
 .unselectable {
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
@@ -148,7 +153,7 @@ button {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-around;
   margin-bottom: 50px;
 }
 .job_information {
@@ -160,8 +165,8 @@ button {
 .project_holder {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-end;
   padding-bottom: 30px;
   width: 100%;
 }
@@ -174,6 +179,9 @@ button {
 }
 .project_info {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .project_details_brain {
   text-align: end;
@@ -181,6 +189,7 @@ button {
 }
 .project_details {
   max-width: 500px;
+  padding: 0 20px;
 }
 .brain_icon {
   width: 200px;
@@ -555,6 +564,31 @@ p {
   background-color: #47ba67;
   color: white;
 }
+.github-button {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+}
+.github-button img {
+  width: 50px;
+  padding-left: 10px;
+}
+@media (min-width: 900px) {
+  .animate_component:nth-of-type(even) .project_holder {
+    flex-direction: row-reverse;
+  }
+  .animate_component:nth-of-type(even) .project_details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .animate_component:nth-of-type(even) .project_details p {
+    text-align: end;
+  }
+}
 @media (max-width: 900px) {
   .section_holder {
     width: 80%;
@@ -637,6 +671,8 @@ p {
   .project_holder {
     flex-direction: column;
     width: 100%;
+    align-items: center;
+    padding-bottom: 60px;
   }
   .oak_presentation {
     width: 90%;
@@ -697,5 +733,12 @@ p {
   }
   .oak_presentation ul {
     padding: 0;
+  }
+  .github-button img {
+    width: 30px;
+  }
+  .github-button {
+    padding: 15px 15px;
+    margin: 0 auto;
   }
 }

@@ -16,7 +16,7 @@ const Experience = (props) => {
           offset={5}
         >
           <div className="tecnology_item">
-            <img alt="Node Icon" src={require("../../assets/icons/node.png")} />
+              <img alt="Node Icon" src={require("../../assets/icons/node.png")} />
             <h4>Node.js</h4>
           </div>
         </ScrollAnimation>

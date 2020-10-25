@@ -3,6 +3,48 @@ import { Link } from "react-router-dom";
 import parse from "html-react-parser";
 import ScrollAnimation from "react-animate-on-scroll";
 
+const CypressProject = (props) => {
+  return (
+    <ScrollAnimation
+    className="animate_component"
+    animateIn="bounceInLeft"
+    duration={1}
+    animateOnce={true}
+    offset={5}
+  >
+      <div className="project_holder">
+      <div className="project_info">
+          <h2 className="white">
+            {props.spanish ? "Reporte de Tests" : "Tests Report"}
+          </h2>
+          <img
+            className="profesor_oak_icon"
+            alt="Profesor Oak Icon"
+            src={require("../../assets/icons/cypress.png")}
+          />
+        </div>
+        <div className="project_details">
+          <p className="white">
+            {props.spanish
+              ? parse(
+                  "Construi un proceso que arma cada una hora el reporte de tests automatizados con <a href='https://www.cypress.io/'>Cypress</a>, luego deploya en <a href='https://surge.sh/'>Surge</a> y por ultimo envia un mail notificando que finalizaron los tets"
+                )
+              : parse(
+                  "I have built a process that creates a HTML report of <a href='https://www.cypress.io/'>Cypress</a> tests every hour, deploys in <a href='https://surge.sh/'>Surge</a> and sends an email notifyng the tests has ended"
+                )}
+          </p>  
+          <a href='https://github.com/julianmendonca/resume'>
+            <button className="button_white github-button">
+              {props.spanish ? "Ver GitHub" : "View GitHub"}
+              <img alt='github' src={require('../../assets/icons/github.png')}/>
+            </button>
+          </a>
+        </div>
+
+      </div>
+    </ScrollAnimation>
+  )
+}
 const ReactProject = (props) => {
   return (
     <ScrollAnimation
@@ -33,6 +75,12 @@ const ReactProject = (props) => {
                   "I have built web apps in <b>React.js</b> with personalized content for Easy Argentina, Musimundo and Locatel Colombia. This website is also made with <b>React.js</b> and <b>React Hooks</b>"
                 )}
           </p>
+          <a href='https://github.com/julianmendonca/resume'>
+            <button className="button_white github-button">
+              {props.spanish ? "Ver GitHub" : "View GitHub"}
+              <img alt='github' src={require('../../assets/icons/github.png')}/>
+            </button>
+          </a>
         </div>
       </div>
     </ScrollAnimation>
@@ -65,11 +113,12 @@ const ProfesorOak = (props) => {
               ? "Profesor Oak es un bot de discord, el cual fue construido utilizando PokeApi, Discord.js, PostreSQL y esta hosteado en Heroku"
               : "Profesor Oak is a discord bot, it was built using PokeApi, Discord.js, PostgreSQL and it's hosted on Heroku"}
           </p>
-          <Link to="/professor_oak">
-            <button className="button_white">
-              {props.spanish ? "Saber más" : "Learn more"}
+          <a href='https://github.com/julianmendonca/ProfesorOak'>
+            <button className="button_white github-button">
+              {props.spanish ? "Ver GitHub" : "View GitHub"}
+              <img alt='github' src={require('../../assets/icons/github.png')}/>
             </button>
-          </Link>
+          </a>
         </div>
       </div>
     </ScrollAnimation>
@@ -121,6 +170,7 @@ const Projects = (props) => {
       </h1>
       <ProfesorOak spanish={props.spanish}></ProfesorOak>
       {true ? "" : <BrainProject spanish={props.spanish}></BrainProject>}
+      <CypressProject spanish={props.spanish}/>
       <ReactProject spanish={props.spanish}></ReactProject>
     </div>
   );
