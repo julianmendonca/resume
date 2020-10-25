@@ -412,11 +412,6 @@ p {
   margin: 0 auto;
   max-height: 400px;
 }
-.certificate_container img:not(:first-child) {
-  background: transparent
-    url("https://i.pinimg.com/originals/a2/dc/96/a2dc9668f2cf170fe3efeb263128b0e7.gif")
-    center no-repeat;
-}
 .certificate_container .close_button {
   width: 90%;
   color: black;
