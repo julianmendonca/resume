@@ -3,11 +3,54 @@ import { Link } from "react-router-dom";
 import parse from "html-react-parser";
 import ScrollAnimation from "react-animate-on-scroll";
 
+const AlgorithmProject = (props) => {
+  return (
+    <ScrollAnimation
+    className="animate_component"
+    animateIn="bounceInRight"
+    duration={1}
+    animateOnce={true}
+    offset={5}
+  >
+      <div className="project_holder">
+      <div className="project_info">
+          <h2 className="white">
+            {props.spanish ? "Algoritmo JS" : "JS Algorithm"}
+          </h2>
+          <img
+          style={{borderRadius:'0'}}
+            className="profesor_oak_icon"
+            alt="Profesor Oak Icon"
+            src={require("../../assets/icons/js.png")}
+          />
+        </div>
+        <div className="project_details">
+          <p className="white">
+            {props.spanish
+              ? parse(
+                  "Haciendo uso de la estructura de datos Grafo armé un algoritmo de recomendación de productos en base a la similitud de los carros de compra"
+                )
+              : parse(
+                  "I have built a product recommendation algorithm based on the similarity of shopping carts using a Graph data structure, w"
+                )}
+          </p>  
+          <a href='https://github.com/julianmendonca/RecomendationAlgorithm'>
+            <button className="button_white github-button">
+              {props.spanish ? "Ver GitHub" : "View GitHub"}
+              <img alt='github' src={require('../../assets/icons/github.png')}/>
+            </button>
+          </a>
+        </div>
+
+      </div>
+    </ScrollAnimation>
+  )
+}
 const CypressProject = (props) => {
   return (
     <ScrollAnimation
     className="animate_component"
-    animateIn="bounceInLeft"
+    animateIn="bounceInRight"
     duration={1}
     animateOnce={true}
     offset={5}
@@ -49,7 +92,7 @@ const ReactProject = (props) => {
   return (
     <ScrollAnimation
       className="animate_component"
-      animateIn="bounceInRight"
+      animateIn="bounceInLeft"
       duration={1}
       animateOnce={true}
       offset={5}
@@ -172,6 +215,7 @@ const Projects = (props) => {
       {true ? "" : <BrainProject spanish={props.spanish}></BrainProject>}
       <CypressProject spanish={props.spanish}/>
       <ReactProject spanish={props.spanish}></ReactProject>
+      <AlgorithmProject spanish={props.spanish}></AlgorithmProject>
     </div>
   );
 };
