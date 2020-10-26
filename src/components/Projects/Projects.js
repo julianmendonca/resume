@@ -6,19 +6,19 @@ import ScrollAnimation from "react-animate-on-scroll";
 const AlgorithmProject = (props) => {
   return (
     <ScrollAnimation
-    className="animate_component"
-    animateIn="bounceInRight"
-    duration={1}
-    animateOnce={true}
-    offset={5}
-  >
+      className="animate_component"
+      animateIn="bounceInRight"
+      duration={1}
+      animateOnce={true}
+      offset={5}
+    >
       <div className="project_holder">
-      <div className="project_info">
+        <div className="project_info">
           <h2 className="white">
             {props.spanish ? "Algoritmo JS" : "JS Algorithm"}
           </h2>
           <img
-          style={{borderRadius:'0'}}
+            style={{ borderRadius: "0" }}
             className="profesor_oak_icon"
             alt="Profesor Oak Icon"
             src={require("../../assets/icons/js.png")}
@@ -31,32 +31,34 @@ const AlgorithmProject = (props) => {
                   "Haciendo uso de la estructura de datos Grafo armé un algoritmo de recomendación de productos en base a la similitud de los carros de compra"
                 )
               : parse(
-                  "I have built a product recommendation algorithm based on the similarity of shopping carts using a Graph data structure, w"
+                  "I have built a product recommendation algorithm based on the similarity of shopping carts using a Graph data structure"
                 )}
-          </p>  
-          <a href='https://github.com/julianmendonca/RecomendationAlgorithm'>
+          </p>
+          <a href="https://github.com/julianmendonca/RecomendationAlgorithm">
             <button className="button_white github-button">
               {props.spanish ? "Ver GitHub" : "View GitHub"}
-              <img alt='github' src={require('../../assets/icons/github.png')}/>
+              <img
+                alt="github"
+                src={require("../../assets/icons/github.png")}
+              />
             </button>
           </a>
         </div>
-
       </div>
     </ScrollAnimation>
-  )
-}
+  );
+};
 const CypressProject = (props) => {
   return (
     <ScrollAnimation
-    className="animate_component"
-    animateIn="bounceInRight"
-    duration={1}
-    animateOnce={true}
-    offset={5}
-  >
+      className="animate_component"
+      animateIn="bounceInRight"
+      duration={1}
+      animateOnce={true}
+      offset={5}
+    >
       <div className="project_holder">
-      <div className="project_info">
+        <div className="project_info">
           <h2 className="white">
             {props.spanish ? "Reporte de Tests" : "Tests Report"}
           </h2>
@@ -75,19 +77,21 @@ const CypressProject = (props) => {
               : parse(
                   "I have built a process that creates a HTML report of <a href='https://www.cypress.io/'>Cypress</a> tests every hour, deploys in <a href='https://surge.sh/'>Surge</a> and sends an email notifyng the tests has ended"
                 )}
-          </p>  
-          <a href='https://github.com/julianmendonca/resume'>
+          </p>
+          <a href="https://github.com/julianmendonca/resume">
             <button className="button_white github-button">
               {props.spanish ? "Ver GitHub" : "View GitHub"}
-              <img alt='github' src={require('../../assets/icons/github.png')}/>
+              <img
+                alt="github"
+                src={require("../../assets/icons/github.png")}
+              />
             </button>
           </a>
         </div>
-
       </div>
     </ScrollAnimation>
-  )
-}
+  );
+};
 const ReactProject = (props) => {
   return (
     <ScrollAnimation
@@ -118,10 +122,13 @@ const ReactProject = (props) => {
                   "I have built web apps in <b>React.js</b> with personalized content for Easy Argentina, Musimundo and Locatel Colombia. This website is also made with <b>React.js</b> and <b>React Hooks</b>"
                 )}
           </p>
-          <a href='https://github.com/julianmendonca/resume'>
+          <a href="https://github.com/julianmendonca/resume">
             <button className="button_white github-button">
               {props.spanish ? "Ver GitHub" : "View GitHub"}
-              <img alt='github' src={require('../../assets/icons/github.png')}/>
+              <img
+                alt="github"
+                src={require("../../assets/icons/github.png")}
+              />
             </button>
           </a>
         </div>
@@ -156,10 +163,13 @@ const ProfesorOak = (props) => {
               ? "Profesor Oak es un bot de discord, el cual fue construido utilizando PokeApi, Discord.js, PostreSQL y esta hosteado en Heroku"
               : "Profesor Oak is a discord bot, it was built using PokeApi, Discord.js, PostgreSQL and it's hosted on Heroku"}
           </p>
-          <a href='https://github.com/julianmendonca/ProfesorOak'>
+          <a href="https://github.com/julianmendonca/ProfesorOak">
             <button className="button_white github-button">
               {props.spanish ? "Ver GitHub" : "View GitHub"}
-              <img alt='github' src={require('../../assets/icons/github.png')}/>
+              <img
+                alt="github"
+                src={require("../../assets/icons/github.png")}
+              />
             </button>
           </a>
         </div>
@@ -213,7 +223,7 @@ const Projects = (props) => {
       </h1>
       <ProfesorOak spanish={props.spanish}></ProfesorOak>
       {true ? "" : <BrainProject spanish={props.spanish}></BrainProject>}
-      <CypressProject spanish={props.spanish}/>
+      <CypressProject spanish={props.spanish} />
       <ReactProject spanish={props.spanish}></ReactProject>
       <AlgorithmProject spanish={props.spanish}></AlgorithmProject>
     </div>
