@@ -16,7 +16,7 @@ const Experience = (props) => {
           offset={5}
         >
           <div className="tecnology_item">
-              <img alt="Node Icon" src={require("../../assets/icons/node.png")} />
+            <img alt="Node Icon" src={require("../../assets/icons/node.png")} />
             <h4>Node.js</h4>
           </div>
         </ScrollAnimation>
@@ -33,6 +33,36 @@ const Experience = (props) => {
               src={require("../../assets/icons/react.png")}
             />
             <h4>React.js</h4>
+          </div>
+        </ScrollAnimation>
+        <ScrollAnimation
+          className="animate_component"
+          animateIn="bounceInLeft"
+          duration={1}
+          animateOnce={true}
+          offset={5}
+        >
+          <div className="tecnology_item">
+            <img
+              alt="Git Icon"
+              src={require("../../assets/icons/typescript.png")}
+            />
+            <h4>Typescript</h4>
+          </div>
+        </ScrollAnimation>
+        <ScrollAnimation
+          className="animate_component"
+          animateIn="bounceInLeft"
+          duration={1}
+          animateOnce={true}
+          offset={5}
+        >
+          <div className="tecnology_item">
+            <img
+              alt="Git Icon"
+              src={require("../../assets/icons/Apollo.png")}
+            />
+            <h4>Apollo</h4>
           </div>
         </ScrollAnimation>
         <ScrollAnimation
@@ -85,32 +115,68 @@ const Experience = (props) => {
           offset={5}
         >
           <div className="tecnology_item">
-            <img alt="HTML Icon" src={require("../../assets/icons/html.png")} />
-            <h4>HTML 5</h4>
-          </div>
-        </ScrollAnimation>
-        <ScrollAnimation
-          className="animate_component"
-          animateIn="bounceInLeft"
-          duration={1}
-          animateOnce={true}
-          offset={5}
-        >
-          <div className="tecnology_item">
-            <img alt="CSS Icon" src={require("../../assets/icons/css.png")} />
-            <h4>CSS 3</h4>
-          </div>
-        </ScrollAnimation>
-        <ScrollAnimation
-          className="animate_component"
-          animateIn="bounceInLeft"
-          duration={1}
-          animateOnce={true}
-          offset={5}
-        >
-          <div className="tecnology_item">
             <img alt="Git Icon" src={require("../../assets/icons/git.png")} />
             <h4>Git</h4>
+          </div>
+        </ScrollAnimation>
+        <ScrollAnimation
+          className="animate_component"
+          animateIn="bounceInLeft"
+          duration={1}
+          animateOnce={true}
+          offset={5}
+        >
+          <div className="tecnology_item">
+            <img
+              alt="Git Icon"
+              src={require("../../assets/icons/storybook.png")}
+            />
+            <h4>Storybook</h4>
+          </div>
+        </ScrollAnimation>
+        <ScrollAnimation
+          className="animate_component"
+          animateIn="bounceInLeft"
+          duration={1}
+          animateOnce={true}
+          offset={5}
+        >
+          <div className="tecnology_item">
+            <img
+              alt="Git Icon"
+              src={require("../../assets/icons/testing-library.png")}
+            />
+            <h4>Testing Library</h4>
+          </div>
+        </ScrollAnimation>
+        <ScrollAnimation
+          className="animate_component"
+          animateIn="bounceInLeft"
+          duration={1}
+          animateOnce={true}
+          offset={5}
+        >
+          <div className="tecnology_item">
+            <img
+              alt="Git Icon"
+              src={require("../../assets/icons/cypress.png")}
+            />
+            <h4>Cypress</h4>
+          </div>
+        </ScrollAnimation>
+        <ScrollAnimation
+          className="animate_component"
+          animateIn="bounceInLeft"
+          duration={1}
+          animateOnce={true}
+          offset={5}
+        >
+          <div className="tecnology_item">
+            <img
+              alt="Git Icon"
+              src={require("../../assets/icons/github.png")}
+            />
+            <h4>Github</h4>
           </div>
         </ScrollAnimation>
       </div>

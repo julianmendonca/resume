@@ -95,7 +95,7 @@ const Braindw = (props) => {
         </div>
         <div className="job_information">
           <h4 className="underline">
-            {props.spanish ? "Tareas Realizadas" : "Job Activities"}
+            {props.spanish ? "Responsabilidades" : "Responsabilities"}
           </h4>
           <ul className="job_tasks">
             <li className="job_task">
@@ -105,7 +105,7 @@ const Braindw = (props) => {
                       "Mantenimiento y extensión de <b>API</b> en <b>C# .Net</b>"
                     )
                   : parse(
-                      "Maintainence and expansion of <b>API</b> using <b>C# .Net</b>"
+                      "Maintainence and expansion of the <b>API</b> using <b>C# .Net</b>"
                     )}
               </p>
             </li>
@@ -122,9 +122,7 @@ const Braindw = (props) => {
                   ? parse(
                       "Creación de nuevas apps utilizando <b>React.js</b> o vanilla JS"
                     )
-                  : parse(
-                      "Creation of new apps using <b>React.js</b> or vanilla JS"
-                    )}
+                  : parse("App development with <b>React.js</b> or vanilla JS")}
               </p>
             </li>
             <li className="job_task">
@@ -134,7 +132,7 @@ const Braindw = (props) => {
                       "Optimización de aplicaciones <b>React.js</b> para manejo de trafico intensivo"
                     )
                   : parse(
-                      "Performace optimization in <b>React.js</b> apps to handle intensive traffic"
+                      "Performace optimization for <b>React.js</b> apps to handle intensive traffic"
                     )}
               </p>
             </li>
@@ -145,7 +143,7 @@ const Braindw = (props) => {
                       "Creación y mantenimiento de End-to-End testing utilizando <b>Cypress</b> "
                     )
                   : parse(
-                      "End-to-End tests creation and maintenance using <b>Cypress</b>"
+                      "End-to-End tests development  and maintenance with <b>Cypress</b>"
                     )}
               </p>
             </li>
@@ -153,10 +151,10 @@ const Braindw = (props) => {
               <p>
                 {props.spanish
                   ? parse(
-                      "Creación y mantenimiento de buscadores utilizando <b>Elasticsearch</b>"
+                      "Creación y mantenimiento de buscadores optimizados utilizando <b>Elasticsearch</b>"
                     )
                   : parse(
-                      "Creation and maintenance of search engines using <b>Elasticsearch</b>"
+                      "Creation and maintenance of optimized search engines using <b>Elasticsearch</b>"
                     )}
               </p>
             </li>
@@ -184,11 +182,11 @@ const Capicua = (props) => {
             src={require("../../assets/images/capicua.jpg")}
           />
           <h3>Full stack web developer</h3>
-          <h5>2021 - {props.spanish ? "Actualidad" : "Today"}</h5>
+          <h5>2021 - {props.spanish ? "Actualidad" : "Present"}</h5>
         </div>
         <div className="job_information">
           <h4 className="underline">
-            {props.spanish ? "Tareas Realizadas" : "Job Activities"}
+            {props.spanish ? "Responsabilidades" : "Responsabilities"}
           </h4>
           <ul className="job_tasks">
             <li className="job_task">
@@ -233,7 +231,9 @@ const Capicua = (props) => {
                   ? parse(
                       "Creacion de historias de componentes con <b>Storybook</b>"
                     )
-                  : parse("Build components stories with <b>Storybook</b>")}
+                  : parse(
+                      "Build stories for React components using <b>Storybook</b>"
+                    )}
               </p>
             </li>
             <li className="job_task">
@@ -249,7 +249,9 @@ const Capicua = (props) => {
                   ? parse(
                       "Manejo de recursos en <b>AWS S3</b> y reivision logs"
                     )
-                  : parse("<b>AWS S3</b> management and logs tracking")}
+                  : parse(
+                      "Remove file management with <b>AWS S3</b> and logs tracking"
+                    )}
               </p>
             </li>
           </ul>
