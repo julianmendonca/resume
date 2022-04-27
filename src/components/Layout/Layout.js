@@ -1,32 +1,32 @@
+import Switch from "@material-ui/core/Switch";
 import React, { useState } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Tilt from "react-tilt";
-import Presentation from "../Presentation/Presentation";
-import Technologies from "../Technologies/Technologies";
-import Experience from "../Experience/Experience";
-import Projects from "../Projects/Projects";
-import ProfessorOak from "../ProfesorOak/ProfesorOak";
 import BrainProject from "../BrainProject/BrainProject";
 import Courses from "../Courses/Courses";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Switch from '@material-ui/core/Switch';
+import Experience from "../Experience/Experience";
+import Presentation from "../Presentation/Presentation";
+import ProfessorOak from "../ProfesorOak/ProfesorOak";
+import Projects from "../Projects/Projects";
+import Technologies from "../Technologies/Technologies";
 
 const Layout = (props) => {
-  const [spanish, setSpanish] = useState(true);
+  const [spanish, setSpanish] = useState(false);
   const [darkThemeChecked, setDarkThemeChecked] = useState(true);
   useState(() => {
     const setInitalLanguage = async () => {
       if (window.localStorage.getItem("spanish") === "false") setSpanish(false);
-      if(props.getTheme() === 'dark')setDarkThemeChecked(true)
-      if(props.getTheme() === 'light')setDarkThemeChecked(false)
+      if (props.getTheme() === "dark") setDarkThemeChecked(true);
+      if (props.getTheme() === "light") setDarkThemeChecked(false);
     };
     setInitalLanguage();
   }, []);
-  
-  const changeDarkMode = ()=>{
+
+  const changeDarkMode = () => {
     props.switchTheme();
     setDarkThemeChecked(!darkThemeChecked);
-    window.localStorage.setItem('theme',!darkThemeChecked?'dark':'light')
-  }
+    window.localStorage.setItem("theme", !darkThemeChecked ? "dark" : "light");
+  };
   return (
     <Router>
       <div className={"language_selector"}>
@@ -56,17 +56,18 @@ const Layout = (props) => {
         >
           English
         </span>
-
       </div>
 
       <Route path="/" exact>
-      <div className='darkmode_switch background_white'>
-        <h5 className={darkThemeChecked ? 'white' : 'black'}>{spanish ?'Modo Oscuro' : 'Dark Mode'}</h5>
+        <div className="darkmode_switch background_white">
+          <h5 className={darkThemeChecked ? "white" : "black"}>
+            {spanish ? "Modo Oscuro" : "Dark Mode"}
+          </h5>
           <Switch
             checked={darkThemeChecked}
             onChange={changeDarkMode}
             name="checkedA"
-            inputProps={{ 'aria-label': 'secondary checkbox' }}
+            inputProps={{ "aria-label": "secondary checkbox" }}
           />
         </div>
         <section className="align-center presentation_section background_white">
