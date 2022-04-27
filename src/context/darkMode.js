@@ -5,7 +5,7 @@ const themes = {
   dark: "dark",
 };
 const ThemeProvider = ({ children, ...props }) => {
-  const [currentTheme, setCurrentTheme] = React.useState(themes.light);
+  const [currentTheme, setCurrentTheme] = React.useState(themes.dark);
   const setLightTheme = () => {
     setCurrentTheme(themes.light);
   };
