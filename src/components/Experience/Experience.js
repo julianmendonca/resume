@@ -184,7 +184,7 @@ const Capicua = (props) => {
             src={require("../../assets/images/capicua.jpg")}
           />
           <h3>Full stack web developer</h3>
-          <h5>2020 - {props.spanish ? "Actualidad" : "Today"}</h5>
+          <h5>2021 - {props.spanish ? "Actualidad" : "Today"}</h5>
         </div>
         <div className="job_information">
           <h4 className="underline">
